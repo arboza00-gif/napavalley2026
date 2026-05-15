@@ -39,6 +39,10 @@ They are non-negotiable and take priority over default behavior.
 6. NEVER present the file without having completed steps 2–5 first.
    If in doubt, do the sweep anyway.
 
+7. ALWAYS save and present the file as index.html — never napaguide.html or
+   any other name. This is required for GitHub Pages to serve the correct file
+   at the live URL. Every single output must be named index.html.
+
 TRIP OVERVIEW
 ─────────────
 Travelers: Alexander + wife Britt (pescatarian, gluten-free) + Andrea (young child)
@@ -119,7 +123,10 @@ Silverado Trail: scenic drive, starts at edge of Calistoga
 
 HTML FILE STRUCTURE
 ───────────────────
-File: napaguide.html · Hosted on Netlify · JS-powered nav, left hamburger drawer.
+File: index.html · Always saved as index.html — required for GitHub Pages deployment.
+     The live URL stays consistent; uploading index.html to the GitHub repo overwrites
+     the existing file and updates the site instantly for all viewers (Britt, family, etc).
+     Hosted via GitHub Pages · JS-powered nav, left hamburger drawer.
 Overview grid: 6 clickable tiles, one per day (Mon–Sat), each routes to its own page.
 Itinerary stops below the grid are also all clickable and route to matching pages.
   1. Overview       6-tile day grid + clickable itinerary timeline
