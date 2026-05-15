@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<!--
+╔══════════════════════════════════════════════════════════════════╗
+║  CLAUDE CONTEXT — DO NOT DELETE                                  ║
+║  If this file is shared in a new conversation, read this block   ║
+║  before responding. It contains full trip and file history.      ║
+╚══════════════════════════════════════════════════════════════════╝
+
+TRIP OVERVIEW
+─────────────
+Traveler: Alexander, with wife Britt (pescatarian, gluten-free) and Andrea.
+Dates:    Mon Jun 15 – Sat Jun 20, 2026
+Base:     Calistoga or Larkmead (Hwy 29 between Calistoga and St. Helena)
+          St. Helena is ~15 min south — Wednesday winery day logistics are seamless.
+          Larkmead is more rural/vineyard-immersed; Calistoga has more restaurants/spas.
+Final night: Downtown Napa hotel (Fri Jun 19)
+Departure: Drive Napa → Sacramento (SMF), Sat Jun 20 (~1.5 hrs)
+
+WHY ST. HELENA
+──────────────
+Chosen for calm walkable main street, central Hwy 29 location, and family-friendly
+pace. Yountville and Napa city both within ~15 min. Not a nightlife destination —
+suits the low-key family trip with Andrea.
+
+DAY-BY-DAY PLAN
+───────────────
+Mon Jun 15  Arrival / recovery. Easy dinner. Farmstead at Long Meadow Ranch suggested.
+Tue Jun 16  Flexible. Day trip options: Calistoga, Yountville, Bale Grist Mill.
+Wed Jun 17  COMMITTED: Turnbull Wine Cellars (Oakville, ~15 min south) + Hall St.
+            Helena (Turnbull 10:30 AM, Mustard Grill 11:45 AM, Hall St. Helena 2:00 PM — all confirmed).
+Thu Jun 18  Flexible. Possible Yountville lunch or slow St. Helena day.
+Fri Jun 19  NAPA DAY: Check out Airbnb → Oxbow Public Market (browse + vendor lunch)
+            → afternoon winery (Domaine Carneros / Trefethen / Stag's Leap)
+            → dinner (Angèle / Morimoto / The Thomas) → downtown Napa hotel.
+Sat Jun 20  Drive to Sacramento SMF.
+
+WINERY LISTS & CROSS-REFERENCE STATUS
+──────────────────────────────────────
+Cross-referencing 3 lists. Any winery on 2+ lists = priority pick.
+
+List 1 · Emily (Shiraz): BR Cohn, Cline, Benziger (bio tour), Schug
+  → ALL filtered out. Sonoma-based, 40–55 min from St. Helena.
+  → Schug (Carneros, ~40 min) is closest — flagged as possible Friday detour.
+
+List 2 · Whitley Jacoby:
+  IN RANGE → shortlisted: Hall St. Helena (in town · Wed plan), Hall Rutherford
+  (~10 min), Honig (~10 min), Peju (~10 min), Mumm (~12 min), Frog's Leap
+  (~10 min), Turnbull (~15 min · Wed plan), PlumpJack (~15 min)
+  FILTERED OUT: Pyramis (Alexander Valley), Hook & Ladder (Santa Rosa),
+  Scribe / Hamel / Flowers (all Sonoma/Healdsburg, 45 min+)
+
+List 3 · Aunt Reg:
+  Turnbull ⭐ PRIORITY (also on Whitley), PlumpJack ⭐ PRIORITY (also on Whitley),
+  Raymond, Odette, Minor, Pine Ridge, AXR
+  Mountain AVAs (Howell, Pride, Spring) deferred to Uncle Jeff
+
+List 4 · Uncle Jeff: PENDING — mountain AVA expert, top-of-mountain-down approach.
+  Expected to cover Howell Mountain, Spring Mountain, Pride Mountain.
+
+CROSS-REFERENCE FINDING (Lists 1–3):
+  Turnbull: Whitley + Aunt Reg → 🏆 Priority Pick
+  PlumpJack: Whitley + Aunt Reg → 🏆 Priority Pick
+  No other overlaps yet. Uncle Jeff's list may add more, especially in mountain AVAs.
+
+NOTE: Second Wednesday winery was originally listed as "Hull" — corrected to Hall St. Helena (resolved).
+
+HTML FILE STRUCTURE
+───────────────────
+Sticky top nav bar with LEFT-side hamburger → slide-out drawer from left.
+Six sections:
+  1. Overview       Day-by-day summary grid + itinerary timeline
+  2. Home Base      Calistoga &amp; Larkmead — restaurants, activities, local wineries
+  3. Wineries       Shortlist (top) → cross-reference (bottom) → filtered out
+  4. Wed Winery Day Committed itinerary: Turnbull → Lunch → Hall St. Helena
+  5. Day Trips      Calistoga, Yountville, Bale Grist Mill, Silverado Trail
+  6. Fri Napa Day   Oxbow → winery options → dinner options → hotel options
+
+DESIGN
+──────
+Fonts: Cormorant Garamond (display serif) + Jost (body sans)
+Palette: Burgundy #6B2737 · Cream #F5F0E8 · Gold #C4A05A · Sage #7A8C6E
+Nav: Left hamburger (left = correct for left-slide drawer), JavaScript-powered,
+     dark overlay closes on tap, Escape key also closes, body scroll locks when open.
+     Hosted on Netlify — JS works fully in mobile browsers (Safari/Chrome).
+
+PENDING / NEXT STEPS
+────────────────────
+· Home base narrowed to Calistoga or Larkmead — rental search ongoing
+· Uncle Jeff's winery list → cross-reference + update Wineries tab
+· Wednesday fully confirmed: Turnbull 10:30 AM · Mustard Grill 11:45 AM · Hall St. Helena 2:00 PM
+· Hall St. Helena booking confirmed via Drew's family member connection
+· Friday winery → pick one + reserve
+· Friday dinner → reserve soon (Angèle / Morimoto / The Thomas fill fast in June)
+· Friday hotel → book (Andaz Napa / Archer Hotel / Napa River Inn)
+· Whitley restaurants in file: Ad Hoc (Yountville, ⚠️ closed Tue/Wed), Mustard Grill (confirmed Wed)
+· Whitley restaurants not yet added: Oakville Grocery, Sunflower Café, Visa Tui, Farmstead (Yountville)
+  Ask Alexander if he wants these added to St. Helena or Day Trips tabs.
+
+PREFERENCES (carry forward)
+────────────────────────────
+· Winery cards: always include recommender attribution in the tip line
+· Cross-reference analysis goes at BOTTOM of Wineries tab; shortlist at TOP
+· Andrea-friendly notes relevant for activity and restaurant picks
+· Britt is pescatarian + gluten-free — relevant for restaurant recs
+· Keep interactive tab/drawer structure; file is shared on mobile
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Napa Valley · June 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --burgundy: #6B2737;
+      --burgundy-light: #8B3A4A;
+      --cream: #F5F0E8;
+      --cream-dark: #EDE5D8;
+      --sage: #7A8C6E;
+      --sage-light: #A3B596;
+      --gold: #C4A05A;
+      --charcoal: #2C2C2C;
+      --warm-gray: #6B6258;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: var(--cream);
+      color: var(--charcoal);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    /* ── HEADER ─────────────────────────────────── */
+    header {
+      background-color: var(--burgundy);
+      color: var(--cream);
+      text-align: center;
+      padding: 64px 24px 56px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 20%, rgba(196,160,90,0.15) 0%, transparent 60%),
+                  radial-gradient(ellipse at 20% 80%, rgba(122,140,110,0.12) 0%, transparent 50%);
+    }
+
+    header .eyebrow {
+      font-family: 'Jost', sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    header h1 em {
+      font-style: italic;
+      color: var(--sage-light);
+    }
+
+    header .subtitle {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      color: rgba(245,240,232,0.65);
+      margin-top: 20px;
+      position: relative;
+    }
+
+    header .divider-line {
+      width: 48px;
+      height: 1px;
+      background: var(--gold);
+      margin: 20px auto 0;
+      position: relative;
+    }
+
+    /* ── STICKY NAV BAR ─────────────────────────── */
+    .nav-bar {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: var(--burgundy);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      height: 52px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    }
+
+    .nav-bar .nav-current {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: rgba(245,240,232,0.75);
+      flex: 1;
+      text-align: center;
+      padding: 0 12px;
+    }
+
+    .hamburger-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .hamburger-lines {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      align-items: flex-start;
+    }
+
+    .hamburger-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cream);
+    }
+
+    .hamburger-btn span.hamburger-lines span {
+      display: block;
+      height: 1.5px;
+      background: var(--cream);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+    .hamburger-btn .hamburger-lines span:nth-child(1) { width: 22px; }
+    .hamburger-btn .hamburger-lines span:nth-child(2) { width: 16px; }
+    .hamburger-btn .hamburger-lines span:nth-child(3) { width: 22px; }
+
+    .hamburger-btn.open .hamburger-lines span:nth-child(1) {
+      transform: translateY(6.5px) rotate(45deg);
+      width: 22px;
+    }
+    .hamburger-btn.open .hamburger-lines span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger-btn.open .hamburger-lines span:nth-child(3) {
+      transform: translateY(-6.5px) rotate(-45deg);
+      width: 22px;
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--gold);
+      font-weight: 400;
+      white-space: nowrap;
+    }
+
+    /* ── DRAWER OVERLAY ─────────────────────────── */
+    .drawer-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0);
+      z-index: 300;
+      pointer-events: none;
+      transition: background 0.35s ease;
+    }
+    .drawer-overlay.open {
+      background: rgba(0,0,0,0.45);
+      pointer-events: all;
+    }
+
+    /* ── DRAWER PANEL ───────────────────────────── */
+    .drawer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: min(320px, 85vw);
+      background: var(--charcoal);
+      z-index: 400;
+      transform: translateX(-100%);
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .drawer.open { transform: translateX(0); }
+
+    .drawer-header {
+      padding: 28px 28px 20px;
+      border-bottom: 1px solid rgba(245,240,232,0.08);
+      background: var(--burgundy);
+      flex-shrink: 0;
+    }
+    .drawer-header .d-eyebrow {
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .drawer-header .d-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.5rem;
+      color: var(--cream);
+      font-weight: 300;
+    }
+
+    .drawer-nav {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px 0;
+    }
+
+    .drawer-btn {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 16px 28px;
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.15s ease;
+      position: relative;
+    }
+    .drawer-btn:hover { background: rgba(245,240,232,0.05); }
+    .drawer-btn.active { background: rgba(196,160,90,0.1); }
+    .drawer-btn.active::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      background: var(--gold);
+    }
+
+    .drawer-btn .d-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: rgba(245,240,232,0.2);
+      font-weight: 300;
+      width: 20px;
+      flex-shrink: 0;
+      transition: color 0.15s;
+    }
+    .drawer-btn.active .d-num { color: var(--gold); }
+
+    .drawer-btn .d-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: rgba(245,240,232,0.5);
+      transition: color 0.15s;
+      line-height: 1.3;
+    }
+    .drawer-btn.active .d-label { color: var(--cream); }
+
+    .drawer-btn .d-sub {
+      font-size: 0.65rem;
+      color: rgba(245,240,232,0.28);
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      margin-top: 2px;
+    }
+    .drawer-btn.active .d-sub { color: rgba(245,240,232,0.5); }
+
+    .drawer-footer {
+      padding: 20px 28px;
+      border-top: 1px solid rgba(245,240,232,0.08);
+      font-size: 0.62rem;
+      color: rgba(245,240,232,0.2);
+      letter-spacing: 0.1em;
+      flex-shrink: 0;
+    }
+
+    /* ── SECTIONS ───────────────────────────────── */
+    .section { display: none; animation: fadeIn 0.3s ease; }
+    .section.active { display: block; }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+    .section-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    /* ── SECTION HEADER ─────────────────────────── */
+    .section-header {
+      margin-bottom: 48px;
+    }
+
+    .section-header .label {
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-header .label::after {
+      content: '';
+      flex: 1;
+      max-width: 40px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .section-header h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.1;
+      color: var(--burgundy);
+    }
+
+    .section-header h2 em { font-style: italic; }
+
+    .section-header p {
+      margin-top: 14px;
+      color: var(--warm-gray);
+      font-size: 0.9rem;
+      max-width: 580px;
+      line-height: 1.8;
+    }
+
+    /* ── CATEGORY LABEL ─────────────────────────── */
+    .category-label {
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--sage);
+      margin: 40px 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .category-label::before, .category-label::after {
+      content: '';
+      height: 1px;
+      background: var(--sage-light);
+    }
+    .category-label::before { width: 20px; }
+    .category-label::after { flex: 1; max-width: 60px; }
+
+    /* ── CARDS GRID ─────────────────────────────── */
+    .cards { display: grid; gap: 20px; }
+    .cards.cols-2 { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+    .cards.cols-1 { grid-template-columns: 1fr; }
+
+    .card {
+      background: white;
+      border: 1px solid rgba(107,39,55,0.08);
+      border-radius: 2px;
+      padding: 28px 32px;
+      position: relative;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 32px rgba(107,39,55,0.1);
+      transform: translateY(-2px);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px;
+      height: 100%;
+      background: var(--burgundy);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .card:hover::before { opacity: 1; }
+
+    .card-badge {
+      display: inline-block;
+      font-size: 0.58rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 3px 8px;
+      border-radius: 1px;
+      margin-bottom: 12px;
+    }
+    .badge-food { background: rgba(196,160,90,0.15); color: #8B6914; }
+    .badge-wine { background: rgba(107,39,55,0.1); color: var(--burgundy); }
+    .badge-activity { background: rgba(122,140,110,0.15); color: #4A6040; }
+    .badge-market { background: rgba(196,160,90,0.2); color: #7A5A10; }
+    .badge-priority { background: rgba(196,160,90,0.25); color: #7A5A10; border: 1px solid rgba(196,160,90,0.4); }
+    .badge-family { background: rgba(122,140,110,0.2); color: #3A5A30; }
+
+    .card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 1.25rem;
+      color: var(--charcoal);
+      margin-bottom: 6px;
+      line-height: 1.2;
+    }
+
+    .card .meta {
+      font-size: 0.72rem;
+      color: var(--sage);
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+      color: var(--warm-gray);
+      line-height: 1.75;
+    }
+
+    .card .tip {
+      margin-top: 12px;
+      font-size: 0.78rem;
+      color: var(--burgundy);
+      font-style: italic;
+      padding-top: 12px;
+      border-top: 1px solid var(--cream-dark);
+    }
+
+    /* ── ITINERARY (Wednesday/Friday) ───────────── */
+    .itinerary { display: flex; flex-direction: column; gap: 0; }
+
+    .itin-stop {
+      display: flex;
+      gap: 28px;
+      position: relative;
+    }
+
+    .itin-stop:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 23px;
+      top: 48px;
+      bottom: -1px;
+      width: 1px;
+      background: linear-gradient(to bottom, var(--burgundy-light), var(--cream-dark));
+    }
+
+    .itin-marker {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--burgundy);
+      color: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 4px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .itin-content {
+      flex: 1;
+      padding-bottom: 40px;
+    }
+
+    .itin-content .time {
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .itin-content h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 6px;
+    }
+
+    .itin-content .sub {
+      font-size: 0.72rem;
+      color: var(--sage);
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+
+    .itin-content p {
+      font-size: 0.85rem;
+      color: var(--warm-gray);
+      line-height: 1.8;
+    }
+
+    /* ── OVERVIEW GRID ──────────────────────────── */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1px;
+      background: rgba(107,39,55,0.1);
+      border: 1px solid rgba(107,39,55,0.1);
+      margin-bottom: 48px;
+    }
+
+    .overview-cell {
+      background: var(--cream);
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .overview-cell .oc-label {
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--sage);
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .overview-cell .oc-value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--burgundy);
+      line-height: 1.2;
+    }
+
+    .overview-cell .oc-sub {
+      font-size: 0.75rem;
+      color: var(--warm-gray);
+      margin-top: 4px;
+    }
+
+    /* ── NOTE BOX ───────────────────────────────── */
+    .note-box {
+      background: rgba(107,39,55,0.05);
+      border-left: 3px solid var(--burgundy);
+      padding: 18px 24px;
+      margin: 32px 0;
+      border-radius: 0 2px 2px 0;
+    }
+    .note-box p {
+      font-size: 0.83rem;
+      color: var(--charcoal);
+      line-height: 1.8;
+    }
+    .note-box strong {
+      color: var(--burgundy);
+      font-weight: 500;
+    }
+
+    /* ── RESPONSIVE ─────────────────────────────── */
+    @media (max-width: 600px) {
+      .section-inner { padding: 36px 16px 60px; }
+      .card { padding: 22px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Travel Guide · Napa Valley</div>
+  <h1>Napa <em>Valley</em></h1>
+  <div class="subtitle">June 15 – 20, 2026 &nbsp;·&nbsp; Napa Valley</div>
+  <div class="divider-line"></div>
+</header>
+
+<!-- ── STICKY NAV BAR ──────────────────────────── -->
+<div class="nav-bar">
+  <button class="hamburger-btn" id="hamburger-btn" onclick="toggleDrawer()" aria-label="Open menu">
+    <span class="hamburger-lines">
+      <span></span><span></span><span></span>
+    </span>
+    <span class="hamburger-label">Menu</span>
+  </button>
+  <span class="nav-current" id="nav-current-label">Overview</span>
+  <span class="nav-logo">Napa Valley</span>
+</div>
+
+<!-- ── DRAWER OVERLAY ──────────────────────────── -->
+<div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+
+<!-- ── DRAWER PANEL ────────────────────────────── -->
+<div class="drawer" id="drawer">
+  <div class="drawer-header">
+    <div class="d-eyebrow">Travel Guide · June 2026</div>
+    <div class="d-title">Napa Valley</div>
+  </div>
+  <nav class="drawer-nav">
+    <button class="drawer-btn active" id="btn-overview" onclick="showTab('overview', 'Overview')">
+      <span class="d-num">1</span>
+      <span><div class="d-label">Overview</div><div class="d-sub">The full plan</div></span>
+    </button>
+    <button class="drawer-btn" id="btn-st-helena" onclick="showTab('st-helena', 'Home Base')">
+      <span class="d-num">2</span>
+      <span><div class="d-label">Home Base</div><div class="d-sub">Calistoga &amp; Larkmead</div></span>
+    </button>
+    <button class="drawer-btn" id="btn-wineries" onclick="showTab('wineries', 'Wineries')">
+      <span class="d-num">3</span>
+      <span><div class="d-label">Wineries</div><div class="d-sub">Shortlist &amp; cross-reference</div></span>
+    </button>
+    <button class="drawer-btn" id="btn-wednesday" onclick="showTab('wednesday', 'Wed · Winery Day')">
+      <span class="d-num">4</span>
+      <span><div class="d-label">Wed · Winery Day</div><div class="d-sub">Turnbull · Mustard Grill · Hall</div></span>
+    </button>
+    <button class="drawer-btn" id="btn-day-trips" onclick="showTab('day-trips', 'Day Trips')">
+      <span class="d-num">5</span>
+      <span><div class="d-label">Day Trips</div><div class="d-sub">Tue &amp; Thu flexible options</div></span>
+    </button>
+    <button class="drawer-btn" id="btn-friday" onclick="showTab('friday', 'Fri · Napa Day')">
+      <span class="d-num">6</span>
+      <span><div class="d-label">Fri · Napa Day</div><div class="d-sub">Oxbow → Winery → Dinner</div></span>
+    </button>
+  </nav>
+  <div class="drawer-footer">Napa Valley · June 15–20, 2026</div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- OVERVIEW                                   -->
+<!-- ══════════════════════════════════════════ -->
+<section id="overview" class="section active">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="label">The Plan</div>
+      <h2>Five Days in <em>Wine Country</em></h2>
+      <p>Based in Calistoga or the Larkmead area for the week, with one committed winery day on Wednesday, flexible days Tuesday through Friday, and a final night in Napa before heading to Sacramento. St. Helena is 15 min south — well within range for dining and Wednesday's wineries.</p>
+    </div>
+
+    <div class="overview-grid">
+      <div class="overview-cell">
+        <div class="oc-label">Arrival</div>
+        <div class="oc-value">Mon Jun 15</div>
+        <div class="oc-sub">Rest &amp; dinner</div>
+      </div>
+      <div class="overview-cell">
+        <div class="oc-label">Base</div>
+        <div class="oc-value">Calistoga</div>
+        <div class="oc-sub">Mon – Thu · Calistoga / Larkmead</div>
+      </div>
+      <div class="overview-cell">
+        <div class="oc-label">Winery Day</div>
+        <div class="oc-value">Wed Jun 17</div>
+        <div class="oc-sub">Turnbull &amp; Hall</div>
+      </div>
+      <div class="overview-cell">
+        <div class="oc-label">Napa Day</div>
+        <div class="oc-value">Fri Jun 19</div>
+        <div class="oc-sub">Oxbow → Winery → Dinner</div>
+      </div>
+      <div class="overview-cell">
+        <div class="oc-label">Departure</div>
+        <div class="oc-value">Sat Jun 20</div>
+        <div class="oc-sub">Drive to Sacramento</div>
+      </div>
+    </div>
+
+    <div class="note-box">
+      <p><strong>Traveling with:</strong> Britt and Andrea. Activities and restaurant picks are filtered with Andrea in mind — stroller-friendly where noted, low-stress timing, and places with flexible or casual atmospheres where helpful.</p>
+    </div>
+
+    <div class="category-label">Day-by-Day</div>
+
+    <div class="itinerary">
+      <div class="itin-stop">
+        <div class="itin-marker">M</div>
+        <div class="itin-content">
+          <div class="time">Monday · June 15</div>
+          <h3>Arrival &amp; Recovery</h3>
+          <div class="sub">Calistoga / Larkmead base</div>
+          <p>Low-key day after travel. Settle into the rental, walk Lincoln Avenue, and plan an easy dinner. Farmstead at Long Meadow Ranch (15 min south in St. Helena) or Lovina in Calistoga are both great first-night options.</p>
+        </div>
+      </div>
+      <div class="itin-stop">
+        <div class="itin-marker">T</div>
+        <div class="itin-content">
+          <div class="time">Tuesday · June 16</div>
+          <h3>Flexible Day</h3>
+          <div class="sub">Calistoga base · optional day trip</div>
+          <p>No hard commitments. Old Faithful Geyser and Lincoln Avenue are zero-effort from the base. Bale Grist Mill is 10 min south. Yountville is ~25 min for a lunch run. See Home Base and Day Trips tabs for the full list.</p>
+        </div>
+      </div>
+      <div class="itin-stop">
+        <div class="itin-marker">W</div>
+        <div class="itin-content">
+          <div class="time">Wednesday · June 17</div>
+          <h3>Winery Day</h3>
+          <div class="sub">Turnbull 10:30 AM · Mustard Grill 11:45 AM · Hall St. Helena 2:00 PM</div>
+          <p>All three stops confirmed. Turnbull at 10:30 AM, Mustard Grill at 11:45 AM, Hall St. Helena at 2:00 PM. See the Wednesday tab for full details.</p>
+        </div>
+      </div>
+      <div class="itin-stop">
+        <div class="itin-marker">T</div>
+        <div class="itin-content">
+          <div class="time">Thursday · June 18</div>
+          <h3>Flexible Day</h3>
+          <div class="sub">Calistoga base</div>
+          <p>Another open day. A Yountville lunch run is ~25 min and an easy half-day. Or stay close to base — Solage spa in the afternoon is a great Thursday wind-down before Friday's Napa day.</p>
+        </div>
+      </div>
+      <div class="itin-stop">
+        <div class="itin-marker">F</div>
+        <div class="itin-content">
+          <div class="time">Friday · June 19</div>
+          <h3>Napa Day</h3>
+          <div class="sub">Oxbow Market · Winery · Dinner · Hotel</div>
+          <p>Check out of the rental in the morning and shift to Napa for the final full day. Oxbow Public Market for browsing and lunch, a nearby winery in the afternoon, nice dinner, then check into a downtown Napa hotel before the Sacramento drive Saturday morning.</p>
+        </div>
+      </div>
+      <div class="itin-stop">
+        <div class="itin-marker">S</div>
+        <div class="itin-content">
+          <div class="time">Saturday · June 20</div>
+          <h3>Drive to Sacramento</h3>
+          <div class="sub">~1.5 hrs · SMF</div>
+          <p>Easy morning drive. Napa to Sacramento is roughly 1.5 hours, giving you time for a relaxed breakfast before hitting the road.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- HOME BASE                                  -->
+<!-- ══════════════════════════════════════════ -->
+<section id="st-helena" class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="label">Home Base · Mon–Thu</div>
+      <h2>Calistoga <em>&amp; Larkmead</em></h2>
+      <p>Home base is expected to be Calistoga or the Larkmead area just south on Hwy 29 — two of the most characterful parts of the valley. St. Helena is only 15 min south, making Wednesday's winery day seamless. Everything below is within 30 min of this base.</p>
+    </div>
+
+    <div class="note-box">
+      <p><strong>Larkmead vs. Calistoga:</strong> Larkmead is the stretch of Hwy 29 between Calistoga and St. Helena — more rural and vineyard-immersed, with Calistoga's restaurants and spas a short drive north and St. Helena's dining scene equally close to the south. Either works as a base with no meaningful difference in access.</p>
+    </div>
+
+    <div class="category-label">Restaurants · Calistoga</div>
+    <div class="cards cols-2">
+
+      <div class="card">
+        <div class="card-badge badge-food">Fine Dining · Michelin-Starred</div>
+        <h3>Auro at Four Seasons</h3>
+        <div class="meta">100 Silverado Trail N · Calistoga · $$$$</div>
+        <p>Calistoga's only Michelin-starred restaurant — refined seasonal tasting menus with vineyard and Mayacamas Mountain views. The wine program has received Wine Spectator's Best of Award of Excellence every year since 2023. Worth noting the chef who earned the star departed in early 2026, so check current reviews before booking.</p>
+        <div class="tip">Best for a special occasion dinner · Reserve well in advance</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-food">Dinner · Casual Elegant</div>
+        <h3>Solbar at Solage</h3>
+        <div class="meta">755 Silverado Trail N · Calistoga · $$$</div>
+        <p>The Solage resort's restaurant serves breakfast, lunch, and dinner with a seasonal farm-to-table focus. A bar menu of sushi and small bites makes it flexible for lighter evenings. One of the most consistently praised dining spots in Calistoga.</p>
+        <div class="tip">Great for any meal of the day · Bar menu good for casual evenings</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-food">Dinner · Downtown</div>
+        <h3>Lovina</h3>
+        <div class="meta">1457 Lincoln Ave · Calistoga · $$$</div>
+        <p>A beloved downtown Calistoga spot run by chefs with San Francisco and wine country credentials. Eclectic American fare, consistently praised by locals and visitors. Weekend brunch also gets strong reviews.</p>
+        <div class="tip">Weekend brunch also excellent · Reservations recommended</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-food">Dinner · Cal-Italian</div>
+        <h3>Bricco Osteria</h3>
+        <div class="meta">1327 Lincoln Ave · Calistoga · $$$</div>
+        <p>Cal-Italian farm-to-table in a downtown storefront. Known for excellent pasta — the seafood linguine is a standout. A warm, unfussy neighborhood feel that pairs well with a casual wine country evening.</p>
+        <div class="tip">Great for a mid-week dinner without needing a big occasion</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-food">Lunch · Casual</div>
+        <h3>Cal Mart (Calistoga Market)</h3>
+        <div class="meta">1491 Lincoln Ave · Calistoga · $</div>
+        <p>One of Napa Valley's best deli counters — fresh sandwiches, local produce, and picnic supplies. Ideal for grabbing lunch before a winery visit or putting together a vineyard picnic. No fuss, no reservations, consistently excellent.</p>
+        <div class="tip">Perfect for a picnic lunch before hitting wineries</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-food">Breakfast · Coffee</div>
+        <h3>Calistoga Roastery</h3>
+        <div class="meta">1426 Lincoln Ave · Calistoga · $</div>
+        <p>The go-to morning coffee stop in Calistoga. Committed to fresh-roasted beans, relaxed atmosphere, and a great way to start a slow morning before deciding what to do with the day.</p>
+        <div class="tip">The natural first stop on any Calistoga morning</div>
+      </div>
+
+    </div>
+
+    <div class="category-label">Restaurants · St. Helena (~15 min south)</div>
+    <div class="cards cols-2">
+
+      <div class="card">
+        <div class="card-badge badge-food">Casual Dinner · Andrea-Friendly</div>
+        <h3>Farmstead at Long Meadow Ranch</h3>
+        <div class="meta">738 Main St · St. Helena · $$$</div>
+        <p>Sprawling outdoor terrace, farm-sourced ingredients, relaxed vibe. The atmosphere is spacious enough that Andrea won't feel out of place. A great Monday arrival dinner candidate.</p>
+        <div class="tip">Great for Monday arrival dinner — warm, unfussy, easy</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-food">Dinner · Special Occasion</div>
+        <h3>Charter Oak</h3>
+        <div class="meta">1050 Charter Oak Ave · St. Helena · $$$</div>
+        <p>Wood-fired cooking with a refined but unpretentious approach. Seasonal vegetables and wood-grilled proteins, excellent cocktail program. One of the best tables in the area.</p>
+        <div class="tip">Reserve in advance — popular most nights</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-food">Dinner · Cocktails</div>
+        <h3>Goose &amp; Gander</h3>
+        <div class="meta">1245 Spring St · St. Helena · $$$ · Garden patio</div>
+        <p>Known as much for craft cocktails as its food. The garden patio is lovely in June. A great "just dinner and drinks" night with a slightly elevated pub sensibility.</p>
+        <div class="tip">The basement bar is a fun late-night stop</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-food">Lunch · Casual</div>
+        <h3>Gott's Roadside</h3>
+        <div class="meta">933 Main St · St. Helena · $ · Family-friendly</div>
+        <p>Iconic roadside stand with great burgers, fish tacos, and shakes. Outdoor seating, no reservations, fast service — very easy with Andrea.</p>
+        <div class="tip">Quick and beloved by locals</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-food">Dinner · Yountville · ~25 min</div>
+        <h3>Ad Hoc</h3>
+        <div class="meta">6476 Washington St, Yountville · Thomas Keller · $$$</div>
+        <p>Thomas Keller's family-style comfort food restaurant — a fixed daily menu that's exceptional without being formal. Whitley specifically recommends securing a reservation.</p>
+        <div class="tip">Rec: Whitley Jacoby · ⚠️ Closed Tuesdays &amp; Wednesdays · Book for Mon or Thu</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-food">Lunch · Italian</div>
+        <h3>Cook St. Helena</h3>
+        <div class="meta">1310 Main St · St. Helena · $$</div>
+        <p>Unpretentious Italian in a warm neighborhood-restaurant setting. House-made pasta, good wine list, no fuss. The kind of place you want on a slow Tuesday afternoon.</p>
+      </div>
+
+    </div>
+
+    <div class="category-label">Activities · Calistoga Area</div>
+    <div class="cards cols-2">
+
+      <div class="card">
+        <div class="card-badge badge-activity">Spa · Iconic</div>
+        <h3>Indian Springs Resort</h3>
+        <div class="meta">1712 Lincoln Ave · Calistoga · Mud baths &amp; mineral pools</div>
+        <p>The most iconic Calistoga spa — volcanic mud baths and a geothermal mineral pool. The pool is family-accessible and open to day guests. Mud bath treatments are adult-only. A genuinely memorable experience and one of the best flex afternoon options.</p>
+        <div class="tip">Book spa treatments in advance · Pool open for day use</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-activity">Spa · Luxury</div>
+        <h3>Solage Spa</h3>
+        <div class="meta">755 Silverado Trail N · Calistoga · $$$$</div>
+        <p>Auberge's upscale spa with geothermal pools, a mud bar, and a full treatment menu. More polished than Indian Springs. The pools and setting are among the nicest in the valley — a great Thursday afternoon option before Friday's Napa day.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-family">Family · Andrea-Friendly</div>
+        <h3>Old Faithful Geyser</h3>
+        <div class="meta">1299 Tubbs Ln · Calistoga · ~$20/person</div>
+        <p>One of only three "Old Faithful" geysers in the world, erupting every 20–30 minutes. Farm animals on site including goats and llamas — a big win with Andrea. No reservations needed, easy walk, genuinely fun for the whole group.</p>
+        <div class="tip">One of the easiest, most rewarding stops with a young child</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-activity">Nature · Scenic</div>
+        <h3>Palisades Trail</h3>
+        <div class="meta">Calistoga · Moderate hike · Great views</div>
+        <p>A scenic hike above Calistoga with panoramic valley views. The lower section is accessible and rewarding without a full climb. Good for a Tuesday or Thursday morning before a later winery stop.</p>
+        <div class="tip">Best in the morning before the heat builds in June</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-activity">Nature · Stroller-Friendly</div>
+        <h3>Bale Grist Mill State Historic Park</h3>
+        <div class="meta">~10 min south · Between Calistoga and St. Helena</div>
+        <p>A beautifully preserved 19th-century grist mill with a short, flat walking trail through a redwood grove. Completely stroller-friendly, genuinely pretty, and requires zero planning. Perfect for a casual morning with Andrea.</p>
+        <div class="tip">Adjacent to Bothe-Napa Valley State Park for longer hiking</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-activity">Cycling</div>
+        <h3>Calistoga Bikeshop</h3>
+        <div class="meta">1318 Lincoln Ave · Calistoga · Rentals &amp; guided tours</div>
+        <p>Rent bikes and explore the vineyards at your own pace, or join a guided tour with winery stops built in. June weather is ideal for cycling. A great Tuesday or Thursday activity for the adults.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-wine">Winery · Experience</div>
+        <h3>Castello di Amorosa</h3>
+        <div class="meta">4045 N St Helena Hwy · Calistoga · Tickets required</div>
+        <p>A hand-built medieval Tuscan castle that's genuinely impressive. Family-friendly tours, great for photos, and solid wine. More of an experience than a standard tasting. Worth a half-morning if the group is up for it.</p>
+        <div class="tip">Book tickets ahead — fills quickly in June</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-wine">Winery · Aerial Views</div>
+        <h3>Sterling Vineyards</h3>
+        <div class="meta">1111 Dunaweal Ln · Calistoga · Gondola ride up</div>
+        <p>Perched 300 feet above Calistoga, reached by a scenic gondola. Panoramic valley views and a self-guided tour make this one of the more memorable winery experiences nearby. The gondola is a hit with kids too.</p>
+        <div class="tip">Unique experience — book ahead in June</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-wine">Winery · Intimate</div>
+        <h3>Davis Estates</h3>
+        <div class="meta">4060 Silverado Trail · Calistoga · By appointment · $$$</div>
+        <p>A stunning Howard Backen-designed estate that's been quietly turning heads since 2011. Cave tastings, coveted Phase V wines, and an intimate experience that rewards a booking. One of the area's hidden gems.</p>
+        <div class="tip">VIP cave experience particularly well reviewed</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-activity">Air · Scenic</div>
+        <h3>Hot Air Ballooning</h3>
+        <div class="meta">Various operators · Calistoga / Yountville · Book in advance</div>
+        <p>The Napa Valley balloon experience is iconic — most operators launch from the Calistoga or Yountville area at sunrise, followed by a champagne breakfast. June weather is ideal. Book early as peak season slots go fast.</p>
+        <div class="tip">Napa Valley Balloons and Balloons Above the Valley are well-regarded</div>
+      </div>
+
+    </div>
+
+    <div class="category-label">Walkable · Calistoga Main Street</div>
+    <div class="cards cols-1">
+      <div class="card">
+        <div class="card-badge badge-activity">Town Wander</div>
+        <h3>Lincoln Avenue Stroll</h3>
+        <div class="meta">Downtown Calistoga · All ages · No planning required</div>
+        <p>Calistoga's main drag is relaxed and walkable — boutique shops, tasting rooms, the Ca'toga Galleria d'Arte (Italian artist Carlo Marchiori's gallery, worth a pop-in), and the kind of laid-back small-town energy that makes it easy to fill a slow morning without an agenda.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- WEDNESDAY                                  -->
+<!-- ══════════════════════════════════════════ -->
+<section id="wednesday" class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="label">Wednesday · June 17</div>
+      <h2>Winery <em>Day</em></h2>
+      <p>All three stops confirmed with set times. Turnbull at 10:30 AM in Oakville, Mustard Grill at 11:45 AM on Hwy 29, and Hall St. Helena at 2:00 PM right in town. The routing flows cleanly south to north with no backtracking.</p>
+    </div>
+
+    <div class="itinerary">
+
+      <div class="itin-stop">
+        <div class="itin-marker">1</div>
+        <div class="itin-content">
+          <div class="time">10:30 AM · Confirmed</div>
+          <h3>Turnbull Wine Cellars</h3>
+          <div class="sub">8210 St Helena Hwy, Oakville · ~15 min south of St. Helena</div>
+          <p>Booked. A classic Oakville estate known for its Cabernet Sauvignon and Merlot, set amid beautiful estate vineyards. A quality-forward Oakville producer with one of the better terroir stories in the valley.</p>
+          <div class="tip">Confirmed · 10:30 AM</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">2</div>
+        <div class="itin-content">
+          <div class="time">11:45 AM · Confirmed</div>
+          <h3>Mustard Grill</h3>
+          <div class="sub">7399 St Helena Hwy, Napa · On the way back toward St. Helena</div>
+          <p>Whitley's top restaurant pick — her highest recommendation in the area. Sits right on Hwy 29 between Oakville and St. Helena, making it a natural stop on the drive back from Turnbull. Reserve via OpenTable.</p>
+          <div class="tip">Rec: Whitley Jacoby · "My favorite restaurant in St Helena" · OpenTable</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">3</div>
+        <div class="itin-content">
+          <div class="time">2:00 PM · Confirmed</div>
+          <h3>Hall St. Helena</h3>
+          <div class="sub">401 St Helena Hwy S · St. Helena · In town</div>
+          <p>Hall's flagship St. Helena estate — striking LEED-certified facility with the iconic chrome rabbit sculpture and excellent Cabernet Sauvignon. Booked via Drew's family member connection. A great contrast to Turnbull's more traditional estate feel.</p>
+          <div class="tip">Confirmed · 2:00 PM · Member booking</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="note-box">
+      <p><strong>Status: All three stops confirmed.</strong> Turnbull (10:30 AM) → Mustard Grill (11:45 AM) → Hall St. Helena (2:00 PM). The routing flows cleanly south to north — Turnbull in Oakville, Mustard Grill on Hwy 29 on the way back, then Hall right in St. Helena. One thing to watch: 11:45 AM is only 75 minutes after a 10:30 AM tasting, so if Turnbull runs long it's worth knowing Mustard Grill is only ~10 min away.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- DAY TRIPS                                  -->
+<!-- ══════════════════════════════════════════ -->
+<section id="day-trips" class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="label">Tuesday &amp; Thursday · Flexible</div>
+      <h2>Easy <em>Day Trips</em></h2>
+      <p>None of these require planning more than a day in advance. Distances are approximate from Calistoga. All work well with Andrea in tow.</p>
+    </div>
+
+    <div class="category-label">South · St. Helena (~15 min) &amp; Yountville (~25 min)</div>
+    <div class="cards cols-2">
+
+      <div class="card">
+        <div class="card-badge badge-food">Dinner · Yountville · ~25 min</div>
+        <h3>Ad Hoc</h3>
+        <div class="meta">6476 Washington St, Yountville · Thomas Keller · $$$</div>
+        <p>Thomas Keller's family-style comfort food restaurant — a fixed-price daily menu that's exceptional without being formal. A strong group dinner option on a flex day. Whitley specifically recommends getting a reservation.</p>
+        <div class="tip">Rec: Whitley Jacoby · ⚠️ Closed Tuesdays &amp; Wednesdays — Mon or Thu only</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-food">Lunch Destination</div>
+        <h3>Yountville for Lunch</h3>
+        <div class="meta">Washington St · ~25 min south of Calistoga · Dense dining</div>
+        <p>Drive down for a late-morning stroll and lunch. Bouchon Bistro (Thomas Keller's French brasserie), Bottega, or Redd Wood all work well for a group lunch without needing a full day commitment. Walk the town after, then head back.</p>
+        <div class="tip">Bouchon is walk-in friendly at lunch. Great mussels and steak frites.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-activity">Art &amp; Culture</div>
+        <h3>Napa Valley Museum / di Rosa</h3>
+        <div class="meta">Art &amp; nature preserve · Carneros district</div>
+        <p>di Rosa is a sprawling art preserve with outdoor sculpture installations spread across vineyard land — genuinely interesting to walk even if you're not deeply into contemporary art. A good pairing with a Yountville lunch if you want to extend the day slightly.</p>
+      </div>
+
+    </div>
+
+    <div class="category-label">From Base · Calistoga &amp; Larkmead Area</div>
+    <div class="cards cols-2">
+
+      <div class="card">
+        <div class="card-badge badge-activity">Nature · Stroller-Friendly</div>
+        <h3>Bothe-Napa Valley State Park</h3>
+        <div class="meta">3601 St Helena Hwy N · ~10 min south of Calistoga</div>
+        <p>Redwood groves, a seasonal swimming pool (open summer), and hiking trails ranging from easy walks to longer treks. A good Tuesday or Thursday morning option — especially the redwood trails which are flat enough for a stroller on the lower sections.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-activity">Scenic</div>
+        <h3>Drive the Silverado Trail</h3>
+        <div class="meta">No agenda required · Beautiful any time of year</div>
+        <p>The Silverado Trail runs parallel to Hwy 29 along the eastern side of the valley. Slower, less commercial, and genuinely beautiful in June. Starts right at the edge of Calistoga — a great way to spend an afternoon even without a specific destination.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- FRIDAY · NAPA DAY                          -->
+<!-- ══════════════════════════════════════════ -->
+<section id="friday" class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="label">Friday · June 19</div>
+      <h2>Napa <em>Day</em></h2>
+      <p>Check out of the St. Helena Airbnb Friday morning and shift to Napa for the final full day. Oxbow Market for browsing and lunch, a nearby winery in the afternoon, nice dinner, then one night in a downtown Napa hotel before the Sacramento drive Saturday.</p>
+    </div>
+
+    <div class="itinerary">
+
+      <div class="itin-stop">
+        <div class="itin-marker">1</div>
+        <div class="itin-content">
+          <div class="time">Late Morning · ~11 AM</div>
+          <h3>Oxbow Public Market</h3>
+          <div class="sub">644 First St, Napa · Indoor market · Free entry</div>
+          <p>Napa's beloved indoor food market on the river. An excellent mix of artisan vendors — charcuterie, oysters, tacos, cheesemakers, bakeries, and the iconic Kara's Cupcakes. Great for browsing and easy grazing with Andrea. Grab lunch from multiple stalls and eat at the communal tables. Very relaxed, no reservations needed.</p>
+          <div class="tip">Hog Island Oyster Co. is right next door if the group wants a proper oyster lunch instead.</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">2</div>
+        <div class="itin-content">
+          <div class="time">Early Afternoon · ~1:30–2 PM</div>
+          <h3>Afternoon Winery</h3>
+          <div class="sub">Choose one · All within 20 min of Oxbow</div>
+          <p>Three strong options depending on your group's preference:</p>
+          <br/>
+          <p><strong>Domaine Carneros</strong> — Carneros district, ~10 min from downtown Napa. A French-style château known for sparkling wines. The terrace tasting is one of the most scenic in the valley. Reserve ahead.<br/><br/>
+          <strong>Trefethen Family Vineyards</strong> — Oak Knoll district, ~10 min. Historic wooden winery, excellent Chardonnay and Cabernet, more intimate feel. One of Napa's hidden gems.<br/><br/>
+          <strong>Stag's Leap Wine Cellars</strong> — Silverado Trail, ~15 min. The winery that famously won the 1976 Paris Tasting. Historic significance + excellent Cabernet. Reservations required.</p>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">3</div>
+        <div class="itin-content">
+          <div class="time">Evening · 6:30–7 PM</div>
+          <h3>Dinner in Napa</h3>
+          <div class="sub">Choose one · All in downtown or near Napa</div>
+          <p>Three options ranging from lively bistro to upscale:</p>
+          <br/>
+          <p><strong>Angèle</strong> — Riverside French bistro, warm atmosphere, great for a group, beautiful patio on the Napa River. A strong choice for a send-off dinner.<br/><br/>
+          <strong>Morimoto Napa</strong> — Iron Chef Morimoto's Napa outpost. Upscale Japanese with excellent omakase and sashimi. Festive and visually impressive interior. Great for a celebratory last night.<br/><br/>
+          <strong>The Thomas</strong> — Rooftop restaurant and bar in a historic building downtown. American cuisine, good cocktails, and a great view of the Napa River area. More casual than Morimoto but still a solid dinner.</p>
+          <div class="tip">Reserve Friday dinner as soon as the date is set — all three are popular on summer Fridays.</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">4</div>
+        <div class="itin-content">
+          <div class="time">Night</div>
+          <h3>Hotel in Downtown Napa</h3>
+          <div class="sub">One night · Check out Saturday morning</div>
+          <p>Three good options for location and comfort:</p>
+          <br/>
+          <p><strong>Andaz Napa</strong> — Hyatt's boutique brand, central location, nice rooms, rooftop bar. Great value for the quality in Napa terms.<br/><br/>
+          <strong>Archer Hotel Napa</strong> — Stylish boutique hotel right on First Street. Great location for walking to dinner and the market. Comfortable rooms and a solid rooftop.<br/><br/>
+          <strong>Napa River Inn</strong> — Charming historic property directly on the Napa River, walkable to everything. Slightly more romantic feel than the larger hotels.</p>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">5</div>
+        <div class="itin-content">
+          <div class="time">Saturday · June 20</div>
+          <h3>Drive to Sacramento</h3>
+          <div class="sub">~1.5 hrs · Napa → SMF</div>
+          <p>Easy drive — I-80 East from Napa to Sacramento is roughly 1.5 hours in normal Saturday morning traffic. Grab breakfast at Oxbow (it opens early) or a hotel breakfast before heading out. Plenty of buffer for a mid-morning flight.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- WINERIES                                   -->
+<!-- ══════════════════════════════════════════ -->
+<section id="wineries" class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="label">Cross-Referenced · 3 Lists</div>
+      <h2>Winery <em>Shortlist</em></h2>
+      <p>Sourced from three recommendation lists and cross-referenced for overlap. Proximity filtering will be applied once the home base is confirmed. All wineries close by 5 PM — plan tastings for mid-morning or early afternoon. 🏆 denotes a winery appearing on 2 or more lists.</p>
+    </div>
+
+    <div class="category-label">🏆 Priority Picks · 2+ Lists</div>
+    <div class="cards cols-2">
+
+      <div class="card">
+        <div class="card-badge badge-priority">🏆 Priority · 2 Lists</div>
+        <h3>Turnbull Wine Cellars</h3>
+        <div class="meta">8210 St Helena Hwy, Oakville · Already on Wednesday</div>
+        <p>Already committed for Wednesday June 17. Quality-forward Oakville Cabernet producer with beautiful estate grounds. The fact that both Whitley and Aunt Reg independently flagged it is a strong endorsement.</p>
+        <div class="tip">Rec: Whitley Jacoby · Aunt Reg · Wed Jun 17 confirmed</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-priority">🏆 Priority · 2 Lists</div>
+        <h3>PlumpJack Winery</h3>
+        <div class="meta">620 Oakville Cross Rd · By appointment · $$</div>
+        <p>Boutique Oakville estate known for a rich, full-bodied Cabernet and an intimate tasting experience. Appointment-based, so it's a slightly more curated visit. Two independent recommendations make this a strong candidate for a flex day.</p>
+        <div class="tip">Rec: Whitley Jacoby · Aunt Reg · Appointment recommended</div>
+      </div>
+
+    </div>
+
+    <div class="category-label">Shortlist · All Recommendations</div>
+    <div class="cards cols-2">
+
+      <div class="card">
+        <div class="card-badge badge-wine">Hall · In Town · Wed Plan</div>
+        <h3>Hall St. Helena</h3>
+        <div class="meta">401 St Helena Hwy S · Walk-ins welcome before 5 PM · $$</div>
+        <p>Hall's flagship estate — stunning LEED-certified facility, iconic chrome rabbit sculpture, and excellent Cabernet Sauvignon. Confirmed for Wednesday June 17 via Drew's family member connection. Free tastings through the membership.</p>
+        <div class="tip">Rec: Whitley Jacoby · Confirmed · Wed Jun 17 · 2:00 PM · Free via member booking</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-wine">Hall · Rutherford</div>
+        <h3>Hall Rutherford</h3>
+        <div class="meta">56 Auberge Rd, Rutherford · Reserve ahead · $$$</div>
+        <p>Hall's Rutherford property is the elevated experience — immersive winery tour, art installations, and a cave system. Only 14 visitors per day, so book well in advance if the group wants something truly memorable.</p>
+        <div class="tip">Rec: Whitley Jacoby · "Fav because of the fancy winery tour"</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-wine">Rutherford</div>
+        <h3>Honig Vineyard &amp; Winery</h3>
+        <div class="meta">850 Rutherford Rd · Walk-in or reserve · $</div>
+        <p>A family-owned estate known for excellent Sauvignon Blanc and reasonably priced tastings by Napa standards. A great low-commitment morning stop without a big spend.</p>
+        <div class="tip">Rec: Whitley Jacoby · "Good affordable white"</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-wine">Rutherford</div>
+        <h3>Peju Province Winery</h3>
+        <div class="meta">8466 St Helena Hwy, Rutherford · Family-owned · $$</div>
+        <p>Family-owned Rutherford estate with a striking tower, beautiful gardens, and approachable Cabernet and Merlot. Welcoming without being overly formal — a solid group-friendly stop.</p>
+        <div class="tip">Rec: Whitley Jacoby · Family-owned, relaxed setting</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-wine">Rutherford · Sparkling</div>
+        <h3>Mumm Napa</h3>
+        <div class="meta">8445 Silverado Trail, Rutherford · Sparkling wine · $$</div>
+        <p>Napa's best-known sparkling wine producer. The vineyard terrace is one of the most scenic tasting settings in the valley — particularly good timed for a late afternoon visit.</p>
+        <div class="tip">Rec: Whitley Jacoby · "Great for champagne sunsets"</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-wine">Rutherford · Organic</div>
+        <h3>Frog's Leap</h3>
+        <div class="meta">8815 Conn Creek Rd, Rutherford · Organic · $$</div>
+        <p>One of Napa's most beloved organic producers — excellent Sauvignon Blanc and Cabernet in a relaxed barn-style setting. Unpretentious and family-friendly, a nice contrast to more formal estates.</p>
+        <div class="tip">Rec: Whitley Jacoby · Sustainable, approachable, family-friendly feel</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-wine">St. Helena</div>
+        <h3>Raymond Vineyards</h3>
+        <div class="meta">849 Zinfandel Ln, St. Helena · $$</div>
+        <p>A St. Helena estate known for a distinctive, theatrical tasting experience alongside solid Cabernet Sauvignon and Chardonnay. The "Theatre of Nature" concept makes it a more immersive and memorable visit than a standard tasting room.</p>
+        <div class="tip">Rec: Aunt Reg</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-wine">Stags Leap District</div>
+        <h3>Odette Estate</h3>
+        <div class="meta">5998 Silverado Trail, Napa · Reserve ahead · $$$</div>
+        <p>A stunning modern estate in the Stags Leap District producing some of Napa's most elegant Cabernet Sauvignon. The architecture and views are exceptional. A more upscale, occasion-worthy tasting experience.</p>
+        <div class="tip">Rec: Aunt Reg</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-wine">Napa Valley</div>
+        <h3>Minor Family Wines</h3>
+        <div class="meta">Napa Valley · $$</div>
+        <p>A well-regarded Napa producer known for approachable, quality-focused wines. Worth confirming the current tasting room location and hours when planning — a solid addition to a flex day itinerary.</p>
+        <div class="tip">Rec: Aunt Reg</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-wine">Stags Leap District</div>
+        <h3>Pine Ridge Vineyards</h3>
+        <div class="meta">5901 Silverado Trail, Napa · Reserve ahead · $$</div>
+        <p>A respected Stags Leap District estate with excellent Cabernet Sauvignon and a notable Chenin Blanc-Viognier blend. Cave tastings are available and add a memorable dimension to the visit.</p>
+        <div class="tip">Rec: Aunt Reg</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-wine">Napa Valley</div>
+        <h3>AXR Winery</h3>
+        <div class="meta">Napa Valley · Aunt Reg's recent favorite · $$</div>
+        <p>Aunt Reg's current top pick — described as a recent favorite that's off the beaten path. Known for a more intimate, under-the-radar experience. Worth researching current tasting availability as they tend to be appointment-focused.</p>
+        <div class="tip">Rec: Aunt Reg · "A recent favorite · off the beaten path"</div>
+      </div>
+
+    </div>
+
+    <div class="category-label">Mountain AVAs · Uncle Jeff's Domain</div>
+    <div class="cards cols-1">
+      <div class="card">
+        <div class="card-badge badge-activity">Expert Rec · Jeff's Approach</div>
+        <h3>Howell Mountain, Pride &amp; Spring Mountain</h3>
+        <div class="meta">Napa Mountain AVAs · Best navigated with local knowledge</div>
+        <p>Aunt Reg specifically defers to Uncle Jeff on these — his approach is to start at the top of the mountain and work down, which is the ideal way to experience Napa's mountain AVAs. Howell Mountain (east of St. Helena), Spring Mountain (west), and Pride Mountain (Napa-Sonoma border) all produce intense, age-worthy wines distinct from valley-floor producers. These will be added in detail once Uncle Jeff's list arrives.</p>
+        <div class="tip">Rec: Aunt Reg (deferred to Uncle Jeff for agenda) · Pending Jeff's full list</div>
+      </div>
+    </div>
+
+    <div class="category-label">Cross-Reference · Lists 1, 2 &amp; 3</div>
+
+    <div class="xref-box">
+      <div class="xref-header">
+        <span class="xref-icon">⊗</span>
+        <span class="xref-title">Cross-Reference · Emily · Whitley · Aunt Reg · Uncle Jeff (pending)</span>
+      </div>
+      <div class="xref-grid" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));">
+        <div class="xref-col">
+          <div class="xref-col-label">Emily · Shiraz</div>
+          <ul>
+            <li>BR Cohn <span class="xref-flag xref-far">Sonoma</span></li>
+            <li>Cline <span class="xref-flag xref-far">Carneros</span></li>
+            <li>Benziger <span class="xref-flag xref-far">Glen Ellen</span></li>
+            <li>Schug <span class="xref-flag xref-far">Carneros</span></li>
+          </ul>
+        </div>
+        <div class="xref-col">
+          <div class="xref-col-label">Whitley Jacoby</div>
+          <ul>
+            <li>Hall St. Helena <span class="xref-flag xref-close">✓ shortlist</span></li>
+            <li>Hall Rutherford <span class="xref-flag xref-close">✓ shortlist</span></li>
+            <li>Honig <span class="xref-flag xref-close">✓ shortlist</span></li>
+            <li>Peju <span class="xref-flag xref-close">✓ shortlist</span></li>
+            <li>Mumm <span class="xref-flag xref-close">✓ shortlist</span></li>
+            <li>Frog's Leap <span class="xref-flag xref-close">✓ shortlist</span></li>
+            <li>Turnbull 🏆 <span class="xref-flag xref-close">✓ priority</span></li>
+            <li>PlumpJack 🏆 <span class="xref-flag xref-close">✓ priority</span></li>
+            <li>Pyramis <span class="xref-flag xref-far">Alex. Valley</span></li>
+            <li>Hook &amp; Ladder <span class="xref-flag xref-far">Santa Rosa</span></li>
+            <li>Scribe <span class="xref-flag xref-far">Sonoma</span></li>
+            <li>Hamel <span class="xref-flag xref-far">Sonoma</span></li>
+            <li>Flowers <span class="xref-flag xref-far">Healdsburg</span></li>
+          </ul>
+        </div>
+        <div class="xref-col">
+          <div class="xref-col-label">Aunt Reg</div>
+          <ul>
+            <li>Turnbull 🏆 <span class="xref-flag xref-close">✓ priority</span></li>
+            <li>PlumpJack 🏆 <span class="xref-flag xref-close">✓ priority</span></li>
+            <li>Raymond <span class="xref-flag xref-close">✓ shortlist</span></li>
+            <li>Odette <span class="xref-flag xref-close">✓ shortlist</span></li>
+            <li>Minor <span class="xref-flag xref-close">✓ shortlist</span></li>
+            <li>Pine Ridge <span class="xref-flag xref-close">✓ shortlist</span></li>
+            <li>AXR <span class="xref-flag xref-close">✓ shortlist</span></li>
+            <li>Howell Mtn <span class="xref-flag xref-unknown">Jeff's domain</span></li>
+            <li>Pride Mtn <span class="xref-flag xref-unknown">Jeff's domain</span></li>
+            <li>Spring Mtn <span class="xref-flag xref-unknown">Jeff's domain</span></li>
+          </ul>
+        </div>
+        <div class="xref-col">
+          <div class="xref-col-label">Uncle Jeff</div>
+          <ul>
+            <li style="color: rgba(107,39,55,0.4); font-style: italic; font-size: 0.78rem;">List pending — mountain AVA expert, top-of-mountain-down approach</li>
+          </ul>
+        </div>
+      </div>
+      <div class="xref-finding">
+        <strong>Finding (Lists 1–3):</strong> Two wineries hit 2+ lists — <strong>Turnbull</strong> (Whitley + Aunt Reg) and <strong>PlumpJack</strong> (Whitley + Aunt Reg) — both elevated to Priority Picks above. No overlaps with Emily's list. Uncle Jeff's list may introduce additional overlaps, particularly in the mountain AVAs.
+      </div>
+    </div>
+
+    <div class="category-label">Noted · Proximity TBD</div>
+    <div class="cards cols-1">
+      <div class="card" style="background: var(--cream); border-style: dashed; opacity: 0.75;">
+        <p style="font-size:0.82rem; color: var(--warm-gray); line-height: 2;">
+          The following are noted for future proximity filtering once the home base is confirmed:
+          <br/><br/>
+          <strong>Emily · Shiraz:</strong> BR Cohn (Glen Ellen), Cline (Carneros), Benziger bio tour (Glen Ellen), Schug (Carneros — closest of Emily's picks, possible Friday detour)
+          <br/><br/>
+          <strong>Whitley Jacoby:</strong> Pyramis (Alexander Valley), Hook &amp; Ladder (Santa Rosa), Scribe (Sonoma), Hamel (Sonoma), Flowers (Healdsburg)
+          <br/><br/>
+          All worth revisiting on a future Sonoma or Healdsburg-based trip. Benziger's biodynamic tour and Scribe are particularly well-regarded.
+        </p>
+      </div>
+    </div>
+
+    <div class="note-box">
+      <p><strong>Uncle Jeff's list incoming.</strong> As the mountain AVA expert of the group, his recommendations are expected to focus on Howell Mountain, Spring Mountain, and Pride Mountain — areas Aunt Reg specifically deferred to him on. His top-of-the-mountain-down approach may shape an entire flex day itinerary. Any winery hitting 2+ lists will be added to the Priority Picks section.</p>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* ── XREF BOX ───────────────────────────────── */
+  .xref-box {
+    background: white;
+    border: 1px solid rgba(107,39,55,0.12);
+    border-radius: 2px;
+    padding: 32px;
+    margin-bottom: 40px;
+  }
+
+  .xref-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--cream-dark);
+  }
+
+  .xref-icon {
+    font-size: 1.1rem;
+    color: var(--burgundy);
+  }
+
+  .xref-title {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--charcoal);
+  }
+
+  .xref-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: 600px) {
+    .xref-grid { grid-template-columns: 1fr; }
+  }
+
+  .xref-col-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+
+  .xref-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .xref-col li {
+    font-size: 0.82rem;
+    color: var(--charcoal);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .xref-flag {
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    padding: 2px 7px;
+    border-radius: 1px;
+    font-weight: 500;
+  }
+
+  .xref-close { background: rgba(122,140,110,0.15); color: #3A6030; }
+  .xref-far { background: rgba(107,39,55,0.08); color: #8B3A4A; }
+  .xref-unknown { background: rgba(196,160,90,0.15); color: #8B6914; }
+
+  .xref-finding {
+    font-size: 0.82rem;
+    color: var(--warm-gray);
+    padding-top: 20px;
+    border-top: 1px solid var(--cream-dark);
+    line-height: 1.8;
+  }
+
+  .xref-finding strong { color: var(--burgundy); font-weight: 500; }
+</style>
+
+<script>
+  const sectionIds = ['overview','st-helena','wineries','wednesday','day-trips','friday'];
+
+  function showTab(id, label) {
+    sectionIds.forEach(s => {
+      document.getElementById(s).classList.remove('active');
+      const btn = document.getElementById('btn-' + s);
+      if (btn) btn.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+    const activeBtn = document.getElementById('btn-' + id);
+    if (activeBtn) activeBtn.classList.add('active');
+    document.getElementById('nav-current-label').textContent = label || id;
+    closeDrawer();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function toggleDrawer() {
+    const drawer = document.getElementById('drawer');
+    const overlay = document.getElementById('drawer-overlay');
+    const btn = document.getElementById('hamburger-btn');
+    const isOpen = drawer.classList.contains('open');
+    if (isOpen) {
+      closeDrawer();
+    } else {
+      drawer.classList.add('open');
+      overlay.classList.add('open');
+      btn.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeDrawer() {
+    document.getElementById('drawer').classList.remove('open');
+    document.getElementById('drawer-overlay').classList.remove('open');
+    document.getElementById('hamburger-btn').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+</script>
+
+</body>
+</html>
