@@ -46,15 +46,22 @@ They are non-negotiable and take priority over default behavior.
 TRIP OVERVIEW
 ─────────────
 Travelers: Alexander + wife Britt (pescatarian, gluten-free) + Andrea (young child)
-Dates:     Mon Jun 15 – Sat Jun 20, 2026
-Base:      The Inn on Pine · Calistoga · CONFIRMED (Expedia #72074402711752)
+Dates:     Wed Jun 10 – Sat Jun 20, 2026
+Flights:   OUTBOUND: Delta 904 · ATL 9:16 AM → SAC 11:07 AM · Wed Jun 10
+           RETURN:   Delta 3755 · SAC 11:32 AM → LAX 1:13 PM · Sat Jun 20
+                     Delta 715  · LAX 2:14 PM  → ATL 9:49 PM · Sat Jun 20
+Leg 1:     Santa Rosa (Country Summer festival) · Wed Jun 10 – Sun Jun 14
+           With Drew, Whitley, and Jeff · Hotel TBD
+           Drive SAC → Santa Rosa ~1.5 hrs (~95 miles via I-80W / US-101N)
+Leg 2:     The Inn on Pine · Calistoga · CONFIRMED (Expedia #72074402711752)
            Check-in Mon Jun 15 @ 4:00 PM · Check-out Fri Jun 19 @ 11:00 AM
            Classic Room, 1 King Bed, Fireplace · Pool · Hot tub
            Free continental breakfast · Free WiFi · Free self parking
            Located on Pine Street, downtown Calistoga — Lincoln Ave walkable
            St. Helena is ~15 min south — seamless for Wednesday winery day
+           Drive Santa Rosa → Calistoga ~50 min (~35 miles via Hwy 12E)
 Final night: Downtown Napa hotel (Fri Jun 19)
-Departure:   Drive Napa → Sacramento (SMF), Sat Jun 20 (~1.5 hrs)
+Return:      Drive Napa → SAC (~1.5 hrs) · SAC → LAX → ATL · Drive ATL → Athens (~1.5 hrs)
 
 BASE CONFIRMED · THE INN ON PINE
 ──────────────────────────────────
@@ -65,8 +72,11 @@ Free continental breakfast each morning — good anchor before winery days.
 
 DAY-BY-DAY PLAN
 ───────────────
-Mon Jun 15  Arrival / check-in at Inn on Pine (4pm). Walk Lincoln Ave. Free breakfast
-            next morning covered. Easy dinner — Lovina in Calistoga or Farmstead (~15 min south).
+Wed Jun 10  TRAVEL DAY: Delta 904 departs ATL 9:16 AM, arrives SAC 11:07 AM.
+            Rent car at SAC. Drive to Santa Rosa ~1.5 hrs. Check in. Explore town.
+            Country Summer festival (Thu–Sun Jun 11–14) with Drew, Whitley, Jeff.
+Mon Jun 15  Drive Santa Rosa → Calistoga (~50 min). Check-in at Inn on Pine (4pm).
+            Walk Lincoln Ave. Dinner — Lovina or Farmstead (~15 min south).
 Tue Jun 16  Flexible. Yountville lunch (~25 min south), Bale Grist Mill (~10 min south,
             Andrea-friendly), Old Faithful Geyser (near base, Andrea-friendly), or slow day.
 Wed Jun 17  FULLY CONFIRMED:
@@ -81,7 +91,10 @@ Thu Jun 18  FULLY CONFIRMED · HOWELL MOUNTAIN DAY:
 Fri Jun 19  NAPA DAY: Check out of Inn on Pine (11am) → Robert Mondavi Winery (Oakville)
             → Oxbow Public Market (browse + lunch) → afternoon downtown Napa
             → dinner (Angèle / Morimoto / Compline) → downtown Napa hotel.
-Sat Jun 20  Drive Napa → Sacramento SMF (~1.5 hrs).
+Sat Jun 20  Drive Napa → SAC (~1.5 hrs, depart by ~8 AM).
+            Delta 3755: SAC 11:32 AM → LAX 1:13 PM.
+            Delta 715: LAX 2:14 PM → ATL 9:49 PM.
+            Drive ATL → Athens GA (~1.5 hrs). Home ~11:30 PM.
 
 WINERY LISTS & CROSS-REFERENCE
 ───────────────────────────────
@@ -135,20 +148,19 @@ HTML FILE STRUCTURE
 ───────────────────
 File: index.html · Always saved as index.html — required for GitHub Pages deployment.
      The live URL stays consistent; uploading index.html to the GitHub repo overwrites
-     the existing file and updates the site instantly for all viewers (Britt, family, etc).
+     the existing file and updates the site instantly for all viewers (Britt, family, etc).\
      Hosted via GitHub Pages · JS-powered nav, left hamburger drawer.
-Overview grid: 6 clickable tiles, one per day (Mon–Sat), each routes to its own page.
-Itinerary stops below the grid are also all clickable and route to matching pages.
-  1. Overview       6-tile day grid + clickable itinerary timeline
+Overview grid: 8 clickable tiles in 4-col layout (2×4), one per day segment.
+  1. Overview       8-tile day grid + clickable itinerary timeline
   2. Home Base      The Inn on Pine · Calistoga — restaurants, activities, nearby wineries
   3. Wineries       Priority picks → shortlist → cross-reference → noted/filtered
-  4. Mon · Arrival  June 15 — placeholder with dinner options, to be updated
-  5. Wed Winery Day Confirmed: Turnbull 10:30 → Mustard Grill 11:45 → Hall 2:00 PM
-  6. Thu · Flex Day June 18 — placeholder with leading candidates, to be updated
-  7. Day Trips      St. Helena, Yountville, Bale Grist Mill, Silverado Trail
-  8. Fri · Napa Day Oxbow → winery options → dinner options → hotel options
-  9. Sat · Departure June 20 — checkout, Oxbow breakfast, drive to Sacramento SMF
-  9. Sat · Departure June 20 — drive to Sacramento SMF, ~1.5 hrs
+  4. Wed · Travel   June 10 — Delta 904 ATL→SAC + drive to Santa Rosa + Country Summer context
+  5. Mon · Arrival  June 15 — drive Santa Rosa→Calistoga + check-in + dinner options
+  6. Wed Winery Day Confirmed: Turnbull 10:30 → Mustard Grill 11:45 → Hall 2:00 PM
+  7. Thu · Flex Day June 18 — Howell Mountain O'Shaughnessy → Outpost → Cade
+  8. Day Trips      St. Helena, Yountville, Bale Grist Mill, Silverado Trail
+  9. Fri · Napa Day Oxbow → winery options → dinner options → hotel options
+  10. Sat · Departure June 20 — drive SAC, Delta 3755 SAC→LAX, Delta 715 LAX→ATL, drive Athens
 
 DESIGN
 ──────
@@ -158,9 +170,9 @@ Nav: Left hamburger, JS-powered slide-out drawer, dark overlay, Escape to close.
 
 PENDING / NEXT STEPS
 ────────────────────
+· Santa Rosa hotel → book for Jun 10–14 (Country Summer festival stay)
 · Friday dinner → reserve ASAP (Angèle / Morimoto / Compline — fills fast in June)
 · Friday hotel → book (Andaz Napa / Archer Hotel / Napa River Inn)
-· Ask Alexander: add Oakville Grocery, Sunflower Café, Visa Tui to the guide?
 
 PREFERENCES (carry forward)
 ────────────────────────────
@@ -819,8 +831,8 @@ PREFERENCES (carry forward)
 
 <header>
   <div class="eyebrow">Travel Guide · Napa Valley</div>
-  <h1>Napa <em>Valley</em></h1>
-  <div class="subtitle">June 15 – 20, 2026 &nbsp;·&nbsp; Napa Valley</div>
+  <h1 onclick="showTab('overview', 'Overview')" style="cursor:pointer;" title="Back to Overview">Napa <em>Valley</em></h1>
+  <div class="subtitle">June 10 – 20, 2026 &nbsp;·&nbsp; Santa Rosa &amp; Napa Valley</div>
   <div class="divider-line"></div>
 </header>
 
@@ -833,7 +845,7 @@ PREFERENCES (carry forward)
     <span class="hamburger-label">Menu</span>
   </button>
   <span class="nav-current" id="nav-current-label">Overview</span>
-  <span class="nav-logo">Napa Valley</span>
+  <span class="nav-logo" onclick="showTab('overview', 'Overview')" style="cursor:pointer;" title="Back to Overview">Napa Valley</span>
 </div>
 
 <!-- ── DRAWER OVERLAY ──────────────────────────── -->
@@ -858,32 +870,36 @@ PREFERENCES (carry forward)
       <span class="d-num">3</span>
       <span><div class="d-label">Wineries</div><div class="d-sub">Shortlist &amp; cross-reference</div></span>
     </button>
-    <button class="drawer-btn" id="btn-monday" onclick="showTab('monday', 'Mon · Arrival')">
+    <button class="drawer-btn" id="btn-wed-travel" onclick="showTab('wed-travel', 'Wed · Travel Day')">
       <span class="d-num">4</span>
-      <span><div class="d-label">Mon · Arrival</div><div class="d-sub">June 15 · Settle in</div></span>
+      <span><div class="d-label">Wed · Travel Day</div><div class="d-sub">Jun 10 · ATL → SAC → Santa Rosa</div></span>
+    </button>
+    <button class="drawer-btn" id="btn-monday" onclick="showTab('monday', 'Mon · Arrival')">
+      <span class="d-num">5</span>
+      <span><div class="d-label">Mon · Arrival</div><div class="d-sub">Jun 15 · Santa Rosa → Calistoga</div></span>
     </button>
     <button class="drawer-btn" id="btn-wednesday" onclick="showTab('wednesday', 'Wed · Winery Day')">
-      <span class="d-num">5</span>
+      <span class="d-num">6</span>
       <span><div class="d-label">Wed · Winery Day</div><div class="d-sub">Turnbull · Mustard Grill · Hall</div></span>
     </button>
     <button class="drawer-btn" id="btn-thursday" onclick="showTab('thursday', 'Thu · Mountain Day')">
-      <span class="d-num">6</span>
+      <span class="d-num">7</span>
       <span><div class="d-label">Thu · Mountain Day</div><div class="d-sub">O'Shaughnessy · Outpost · Cade</div></span>
     </button>
     <button class="drawer-btn" id="btn-day-trips" onclick="showTab('day-trips', 'Day Trips')">
-      <span class="d-num">7</span>
+      <span class="d-num">8</span>
       <span><div class="d-label">Day Trips</div><div class="d-sub">Options for flex days</div></span>
     </button>
     <button class="drawer-btn" id="btn-friday" onclick="showTab('friday', 'Fri · Napa Day')">
-      <span class="d-num">8</span>
+      <span class="d-num">9</span>
       <span><div class="d-label">Fri · Napa Day</div><div class="d-sub">Mondavi → Oxbow → Dinner</div></span>
     </button>
     <button class="drawer-btn" id="btn-saturday" onclick="showTab('saturday', 'Sat · Departure')">
-      <span class="d-num">9</span>
-      <span><div class="d-label">Sat · Departure</div><div class="d-sub">June 20 · Drive to SMF</div></span>
+      <span class="d-num">10</span>
+      <span><div class="d-label">Sat · Departure</div><div class="d-sub">Jun 20 · SMF → LAX → ATL → Athens</div></span>
     </button>
   </nav>
-  <div class="drawer-footer">Napa Valley · June 15–20, 2026</div>
+  <div class="drawer-footer">Napa Valley · June 10–20, 2026</div>
 </div>
 
 <!-- ══════════════════════════════════════════ -->
@@ -893,15 +909,25 @@ PREFERENCES (carry forward)
   <div class="section-inner">
     <div class="section-header">
       <div class="label">The Plan</div>
-      <h2>Five Days in <em>Wine Country</em></h2>
-      <p>Based in Calistoga or the Larkmead area for the week, with one committed winery day on Wednesday, flexible days Tuesday through Friday, and a final night in Napa before heading to Sacramento. St. Helena is 15 min south — well within range for dining and Wednesday's wineries.</p>
+      <h2>Ten Days in <em>Wine Country</em></h2>
+      <p>The trip opens in Santa Rosa for Country Summer (Jun 10–14) with Drew, Whitley, and Jeff, then moves south to Calistoga for five nights at The Inn on Pine, finishing with a final night in downtown Napa before flying home Saturday. St. Helena is 15 min south of the Inn.</p>
     </div>
 
-    <div class="overview-grid">
+    <div class="overview-grid" style="grid-template-columns: repeat(4, 1fr);">
+      <div class="overview-cell clickable" onclick="showTab('wed-travel', 'Wed · Travel Day')">
+        <div class="oc-label">Wed · Jun 10</div>
+        <div class="oc-value">Travel In</div>
+        <div class="oc-sub">ATL → SAC → Santa Rosa</div>
+      </div>
+      <div class="overview-cell clickable" onclick="showTab('wed-travel', 'Wed · Travel Day')">
+        <div class="oc-label">Jun 11–14</div>
+        <div class="oc-value">Country Summer</div>
+        <div class="oc-sub">Festival · Santa Rosa</div>
+      </div>
       <div class="overview-cell clickable" onclick="showTab('monday', 'Mon · Arrival')">
         <div class="oc-label">Mon · Jun 15</div>
-        <div class="oc-value">Arrival</div>
-        <div class="oc-sub">Settle in · Dinner</div>
+        <div class="oc-value">Calistoga</div>
+        <div class="oc-sub">Santa Rosa → Inn on Pine</div>
       </div>
       <div class="overview-cell clickable" onclick="showTab('st-helena', 'Home Base')">
         <div class="oc-label">Tue · Jun 16</div>
@@ -926,20 +952,29 @@ PREFERENCES (carry forward)
       <div class="overview-cell clickable" onclick="showTab('saturday', 'Sat · Departure')">
         <div class="oc-label">Sat · Jun 20</div>
         <div class="oc-value">Departure</div>
-        <div class="oc-sub">Drive to Sacramento</div>
+        <div class="oc-sub">SAC → LAX → ATL → Athens</div>
       </div>
     </div>
 
     <div class="category-label">Day-by-Day</div>
 
     <div class="itinerary">
+      <div class="itin-stop clickable" onclick="showTab('wed-travel', 'Wed · Travel Day')">
+        <div class="itin-marker">W</div>
+        <div class="itin-content">
+          <div class="time">Wednesday · June 10 · Travel Day</div>
+          <h3>Atlanta → Sacramento → Santa Rosa</h3>
+          <div class="sub">Delta 904 · ATL 9:16 AM → SAC 11:07 AM · Rental car · ~1.5 hr drive north</div>
+          <p>Board Delta 904 at 9:16 AM Eastern, land in Sacramento at 11:07 AM Pacific. Pick up the rental car and drive ~90 minutes west on I-80 then north on US-101 into Santa Rosa. Settled in by early afternoon. Country Summer runs through Sunday with Drew, Whitley, and Jeff.</p>
+        </div>
+      </div>
       <div class="itin-stop clickable" onclick="showTab('monday', 'Mon · Arrival')">
         <div class="itin-marker">M</div>
         <div class="itin-content">
           <div class="time">Monday · June 15</div>
-          <h3>Arrival &amp; Check-In</h3>
-          <div class="sub">The Inn on Pine · Downtown Calistoga · Check-in 4pm</div>
-          <p>Check into The Inn on Pine at 4pm. Walk Lincoln Avenue, get oriented, and find a good first dinner. Lovina (in town) or Farmstead at Long Meadow Ranch (15 min south) are the leading candidates.</p>
+          <h3>Santa Rosa → Calistoga</h3>
+          <div class="sub">~1 hr via CA-12 E · Check-in at The Inn on Pine · 4 PM</div>
+          <p>Pack up in Santa Rosa and take the scenic CA-12 through Kenwood and the Sonoma Valley into Napa. Check into The Inn on Pine at 4pm. Walk Lincoln Avenue and find dinner — Lovina (two minutes on foot) or Farmstead (15 min south) are the leading candidates.</p>
         </div>
       </div>
       <div class="itin-stop clickable" onclick="showTab('st-helena', 'Home Base')">
@@ -981,10 +1016,10 @@ PREFERENCES (carry forward)
       <div class="itin-stop clickable" onclick="showTab('saturday', 'Sat · Departure')">
         <div class="itin-marker">S</div>
         <div class="itin-content">
-          <div class="time">Saturday · June 20</div>
-          <h3>Drive to Sacramento</h3>
-          <div class="sub">~1.5 hrs · SMF</div>
-          <p>Easy morning drive. Napa to Sacramento is roughly 1.5 hours, giving you time for a relaxed breakfast before hitting the road.</p>
+          <div class="time">Saturday · June 20 · Departure Day</div>
+          <h3>Napa → Sacramento → Atlanta → Athens</h3>
+          <div class="sub">Leave by 8:30 AM · Delta 3755 SAC 11:32 AM → LAX · Delta 715 LAX 2:14 PM → ATL 9:49 PM</div>
+          <p>Leave downtown Napa by 8:30 AM for the ~1.5 hr drive to Sacramento. Delta 3755 departs at 11:32 AM for LAX, connecting to Delta 715 at 2:14 PM into Atlanta at 9:49 PM Eastern. Drive home to Athens — roughly 1.5 hrs. Home by ~11:30 PM.</p>
         </div>
       </div>
     </div>
@@ -1231,8 +1266,123 @@ PREFERENCES (carry forward)
 </section>
 
 <!-- ══════════════════════════════════════════ -->
-<!-- WEDNESDAY                                  -->
+<!-- WED JUN 10 · TRAVEL IN                    -->
 <!-- ══════════════════════════════════════════ -->
+
+<!-- ══════════════════════════════════════════ -->
+<section id="wed-travel" class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="label">Wednesday · June 10</div>
+      <h2>Travel <em>Day</em></h2>
+      <p>Delta 904 departs Atlanta at 9:16 AM and lands Sacramento at 11:07 AM — a direct, easy flight. Pick up the rental car at SMF and drive west to Santa Rosa, roughly 1.5 hours. You're arriving midday, which leaves a full afternoon to check in and get oriented before Country Summer kicks off.</p>
+    </div>
+
+    <div class="itinerary">
+
+      <div class="itin-stop">
+        <div class="itin-marker">1</div>
+        <div class="itin-content">
+          <div class="time">5:30 AM · Athens, GA</div>
+          <h3>Depart Athens</h3>
+          <div class="sub">~1 hr 20 min to off-airport parking · ATL</div>
+          <p>Early alarm. Drive from Athens to the off-airport lot — roughly 1 hour 20 minutes depending on traffic, which will be minimal at that hour. Budget 20 minutes for the shuttle ride to the terminal, putting you at ATL by 7:10–7:15 AM. That gives comfortable time to check bags, clear security, and get to the gate before the 9:16 AM departure.</p>
+          <div class="tip">Set the alarm for 4:45 AM · Load the car the night before · Confirm shuttle hours with your parking lot — some require advance booking</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">2</div>
+        <div class="itin-content">
+          <div class="time">9:16 AM · Depart Atlanta</div>
+          <h3>Delta 904 · ATL → SAC</h3>
+          <div class="sub">Hartsfield-Jackson Atlanta International · Delta Main Classic (U)</div>
+          <p>Departs Atlanta at 9:16 AM. Non-stop to Sacramento — plan to be at ATL by 7:15 AM given the size of the airport and the fact you're traveling with Andrea. Gate B/C most likely, but check day-of.</p>
+          <div class="tip">Arrive ATL by 7:15 AM · Check bags if traveling with festival gear · Gate check stroller if needed</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">3</div>
+        <div class="itin-content">
+          <div class="time">11:07 AM · Arrive Sacramento</div>
+          <h3>Sacramento International (SMF)</h3>
+          <div class="sub">Terminal B arrivals · Rental car center on-site</div>
+          <p>Touch down at 11:07 AM Pacific — the Sacramento airport is compact and easy. Baggage claim is quick, and the rental car center is connected to the terminal. Budget around 30–45 minutes from wheels down to car keys in hand.</p>
+          <div class="tip">Rental car confirmation TBD — book in advance for June festival weekend · SUV or minivan recommended for luggage + festival gear</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">4</div>
+        <div class="itin-content">
+          <div class="time">~12:00 PM · Drive to Santa Rosa</div>
+          <h3>SAC → Santa Rosa</h3>
+          <div class="sub">~95 miles · ~1 hr 20 min · I-80 W to US-101 N</div>
+          <p>Head west on I-80 toward the Bay, then north on US-101 past Novato and Petaluma into Santa Rosa. The drive is easy and scenic once you get past the Sacramento sprawl. You'll arrive around 1:00–1:30 PM — plenty of time to check in and decompress before the festival week starts.</p>
+          <div class="tip">Light traffic on Wednesday midday · Gas up in Sacramento before leaving · Set GPS to downtown Santa Rosa or hotel address</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">5</div>
+        <div class="itin-content">
+          <div class="time">~1:30 PM · Check In · Santa Rosa</div>
+          <h3>Hotel in Santa Rosa</h3>
+          <div class="sub">Hotel TBD · Downtown or near Sonoma County Fairgrounds</div>
+          <p>Hotel is still TBD — book as soon as possible. Country Summer draws a big crowd and everything near the Sonoma County Fairgrounds fills fast. Downtown Santa Rosa properties (Hotel E, Hyatt Regency, Vintners Inn if budget allows) are solid picks. The fairgrounds are on Bennett Valley Rd, so proximity matters for the festival days.</p>
+          <div class="tip">⚠️ Book immediately — Country Summer hotel inventory moves fast in June · Sonoma County Fairgrounds is the festival venue</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">6</div>
+        <div class="itin-content">
+          <div class="time">Evening · Wednesday</div>
+          <h3>First Night in Santa Rosa</h3>
+          <div class="sub">Dinner · Explore downtown · Get your bearings</div>
+          <p>Drew, Whitley, and Jeff are joining for the festival — Wednesday night is a good casual meetup dinner before Country Summer starts. Santa Rosa's dining scene is solid: Willi's Wine Bar on Guerneville Rd is a local favorite, Bird & The Bottle downtown for approachable Sonoma food, or just a relaxed dinner wherever the group lands. No pressure on night one.</p>
+          <div class="tip">Country Summer festival runs Thu–Sun · Check set times and schedules once tickets are confirmed · Sonoma County Fairgrounds is the venue</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="note-box">
+      <p><strong>Country Summer · Jun 11–14 · Sonoma County Fairgrounds, Santa Rosa.</strong> The festival runs through the weekend with Drew, Whitley, and Jeff. Set times and lineup details to be added once confirmed. The fairgrounds are easy to reach from downtown Santa Rosa — no need to drive on festival days if you're staying nearby. On Monday June 15, the group heads east to Calistoga for the wine country leg of the trip (~50 min drive).</p>
+    </div>
+
+    <div class="category-label">Santa Rosa · Dinner Options</div>
+    <div class="cards cols-2">
+
+      <div class="card">
+        <div class="card-badge badge-food">Wine Bar · Local Favorite</div>
+        <h3>Willi's Wine Bar</h3>
+        <div class="meta">4404 Old Redwood Hwy · Santa Rosa · $$$ · Reservations recommended</div>
+        <p>One of the most consistently praised spots in Sonoma County — a small-plates wine bar with an exceptional by-the-glass list and inventive food. The kind of place that's perfect for a group arriving after a long travel day. Britt-friendly options throughout.</p>
+        <div class="tip">Book ahead — fills quickly on weeknights</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-food">Casual · Downtown</div>
+        <h3>Bird &amp; The Bottle</h3>
+        <div class="meta">Downtown Santa Rosa · $$ · Walk-in friendly</div>
+        <p>A relaxed downtown Santa Rosa spot with a casual, approachable menu. Good for a low-key first night when the group just wants to eat well without committing to a full production. Easy with Andrea.</p>
+        <div class="tip">Walk-in friendly · Good for a no-fuss arrival dinner</div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-food">Lunch / Breakfast · Casual</div>
+        <h3>Breakfast or Lunch on Arrival</h3>
+        <div class="meta">Various downtown Santa Rosa spots</div>
+        <p>Arriving around 1:30 PM means you may want a late lunch before checking in or after. Grossman's Noshery &amp; Bar (deli-style, great sandwiches) and Acre Coffee (multiple locations, solid breakfast all day) are easy walk-in options near downtown.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 <!-- ══════════════════════════════════════════ -->
 <!-- MONDAY                                     -->
 <!-- ══════════════════════════════════════════ -->
@@ -1240,45 +1390,75 @@ PREFERENCES (carry forward)
   <div class="section-inner">
     <div class="section-header">
       <div class="label">Monday · June 15</div>
-      <h2>Arrival <em>Day</em></h2>
-      <p>Check-in at The Inn on Pine at 4pm. A recovery day after travel — settle in, decompress, and get oriented. Free continental breakfast starts Tuesday. No hard commitments tonight.</p>
+      <h2>Santa Rosa <em>→ Calistoga</em></h2>
+      <p>The last morning of the Country Summer leg. Pack up in Santa Rosa and take the scenic CA-12 East through the Sonoma Valley into Napa. Check-in at The Inn on Pine opens at 4 PM — there's no rush, and the drive is worth lingering if the group is up for a quick detour.</p>
     </div>
 
-    <div class="note-box">
-      <p><strong>Check-in at 4pm.</strong> The Inn on Pine is right on Pine Street, a two-minute walk from Lincoln Avenue. Get settled, let Andrea get comfortable, then wander the main street before dinner. Lovina and Farmstead (St. Helena, 15 min south) are the leading dinner candidates for the first night.</p>
+    <div class="itinerary">
+
+      <div class="itin-stop">
+        <div class="itin-marker">1</div>
+        <div class="itin-content">
+          <div class="time">Morning · Santa Rosa</div>
+          <h3>Pack Up · Last Morning</h3>
+          <div class="sub">Check out of Santa Rosa hotel · Grab breakfast before the drive</div>
+          <p>No hard departure time — check-in at The Inn on Pine isn't until 4 PM, so there's no reason to rush. Grab breakfast in Santa Rosa, settle any loose ends with the group, and hit the road when ready. A 10–11 AM departure means arriving in Calistoga by noon, with the whole afternoon free before check-in.</p>
+          <div class="tip">Say goodbye to Drew, Whitley, and Jeff — the Napa leg is yours from here</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">2</div>
+        <div class="itin-content">
+          <div class="time">Mid-Morning · ~1 hr drive</div>
+          <h3>Drive: Santa Rosa → Calistoga</h3>
+          <div class="sub">CA-12 East → Hwy 29 North · ~40 miles · ~60 min</div>
+          <p>Head east out of Santa Rosa on CA-12 — a beautiful two-lane road that winds through the Sonoma Valley past Kenwood, Glen Ellen, and the Sonoma Mountain foothills. At Oakville pick up Hwy 29 North and follow it straight into Calistoga. The drive itself is a highlight, especially in June when the valley is at its greenest.</p>
+          <div class="tip">Optional: quick stop at a Kenwood or Glen Ellen winery on the way — B.R. Cohn (Emily's rec) is right on CA-12</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">3</div>
+        <div class="itin-content">
+          <div class="time">Mid-Day · Arrive Calistoga</div>
+          <h3>Arrive Early · Explore Before Check-In</h3>
+          <div class="sub">Check-in opens 4 PM · Inn on Pine · Pine St, Calistoga</div>
+          <p>If arriving before 4 PM, the Inn may hold your bags while you walk Lincoln Avenue, grab lunch, or decompress at a café. Calistoga Roastery is the natural first stop. Cal Mart on Lincoln Ave has great deli sandwiches for a casual early lunch. No need to force an agenda — the goal today is settling in.</p>
+          <div class="tip">Lincoln Ave is two minutes from the Inn — you can be in town before your room is ready</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">4</div>
+        <div class="itin-content">
+          <div class="time">4:00 PM · Check-In</div>
+          <h3>The Inn on Pine</h3>
+          <div class="sub">Pine St · Downtown Calistoga · Expedia #72074402711752</div>
+          <p>Classic King room with fireplace. Pool and hot tub on site. Free continental breakfast starts tomorrow — a solid anchor before Tuesday's winery options. Free parking. Lincoln Avenue is a two-minute walk from the front door.</p>
+          <div class="tip">Confirmation: Expedia #72074402711752 · Check-out Fri Jun 19 @ 11 AM</div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="category-label">Starting Points</div>
+    <div class="category-label">Monday Dinner · First Night in Calistoga</div>
     <div class="cards cols-2">
 
       <div class="card">
-        <div class="card-badge badge-activity">Check-In · 4pm</div>
-        <h3>The Inn on Pine</h3>
-        <div class="meta">Pine St · Downtown Calistoga · Pool · Hot tub · Fireplace</div>
-        <p>Check-in opens at 4pm. Classic King room with fireplace. Pool and hot tub on site. Free breakfast starts Tuesday morning. Lincoln Avenue is a two-minute walk from the front door — no driving needed to get oriented on night one.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-badge badge-activity">Easy Explore</div>
-        <h3>Walk Lincoln Avenue</h3>
-        <div class="meta">Calistoga main street · No planning required</div>
-        <p>A low-effort way to get oriented. Grab a coffee at Calistoga Roastery, browse a few shops, and get a feel for the town before dinner.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-badge badge-food">Dinner Option A</div>
+        <div class="card-badge badge-food">Dinner Option A · 2 min walk</div>
         <h3>Lovina</h3>
         <div class="meta">1457 Lincoln Ave · Calistoga · $$$ · 2 min walk from Inn</div>
-        <p>The easiest first-night option — two minutes from the Inn on foot, no driving after a travel day. Eclectic American menu with strong local reviews. Relaxed enough for a low-key arrival evening.</p>
-        <div class="tip">Reservations recommended · Breakfast covered at the Inn tomorrow morning</div>
+        <p>The easiest first-night option — two minutes from the Inn on foot, no driving after a travel day. Eclectic American menu with strong local reviews. The right energy for a low-key arrival evening with Andrea.</p>
+        <div class="tip">Reservations recommended · Walkable from the Inn</div>
       </div>
 
       <div class="card">
-        <div class="card-badge badge-food">Dinner Option B</div>
+        <div class="card-badge badge-food">Dinner Option B · 15 min south</div>
         <h3>Farmstead at Long Meadow Ranch</h3>
         <div class="meta">738 Main St · St. Helena · $$$ · 15 min south</div>
-        <p>A short drive south to St. Helena. Sprawling outdoor terrace, farm-sourced ingredients, Andrea-friendly atmosphere. A great first wine country dinner if the group has energy to drive.</p>
-        <div class="tip">Reservations recommended</div>
+        <p>A short drive south if the group has energy after arriving. Sprawling outdoor terrace, farm-sourced ingredients, Andrea-friendly atmosphere. A great first Napa wine country dinner if you want to stretch your legs after the drive.</p>
+        <div class="tip">Reservations recommended · Andrea-friendly · 15 min south</div>
       </div>
 
     </div>
@@ -1658,39 +1838,102 @@ PREFERENCES (carry forward)
 <section id="saturday" class="section">
   <div class="section-inner">
     <div class="section-header">
-      <div class="label">Saturday · June 20</div>
-      <h2>Departure <em>Day</em></h2>
-      <p>The final morning. Check out of the Napa hotel, grab breakfast, and drive to Sacramento for the flight home. An easy, low-stress close to the trip.</p>
+      <div class="label">Saturday · June 20 · Travel Day</div>
+      <h2>Napa → Sacramento <em>→ Atlanta → Athens</em></h2>
+      <p>An early departure from downtown Napa to make the 11:32 AM flight out of Sacramento. Two flights home — SAC to LAX, then LAX to Atlanta — with a tight but manageable connection. Back in Athens by late night.</p>
     </div>
 
     <div class="note-box">
-      <p><strong>Drive time:</strong> Napa to Sacramento (SMF) is roughly 1.5 hours on I-80 East in normal Saturday morning traffic. Leaving by 9–10 AM gives comfortable buffer for most flight times. This page will be updated with hotel checkout time and flight details once confirmed.</p>
+      <p><strong>Leave Napa by 8:30 AM.</strong> The drive to Sacramento is ~1.5 hours, and you'll want to be at SMF by 10:00–10:15 AM for the 11:32 AM departure. That means breakfast needs to be quick — Oxbow opens early, or grab something at the hotel before checkout.</p>
     </div>
 
-    <div class="category-label">Morning Plan</div>
+    <div class="itinerary">
+
+      <div class="itin-stop">
+        <div class="itin-marker">1</div>
+        <div class="itin-content">
+          <div class="time">~7:30–8:00 AM · Downtown Napa Hotel</div>
+          <h3>Check Out · Quick Breakfast</h3>
+          <div class="sub">Andaz / Archer / Napa River Inn · TBD</div>
+          <p>Check out of the Napa hotel and grab a fast breakfast. Oxbow Public Market is a 5-minute walk from all three hotel options and opens early — coffee and a pastry, or a quick stop at one of the food stalls. Don't linger: wheels need to be rolling by 8:30 AM.</p>
+          <div class="tip">Oxbow opens early on weekends · Or grab hotel breakfast if included</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">2</div>
+        <div class="itin-content">
+          <div class="time">8:30 AM · Depart Napa</div>
+          <h3>Drive: Napa → Sacramento (SMF)</h3>
+          <div class="sub">~1.5 hrs · Hwy 29 N or I-80 E · Arrive by 10:00 AM</div>
+          <p>Head north on Hwy 29 out of Napa, connect to I-80 East at Vallejo or Fairfield, and follow it into Sacramento. Saturday morning traffic is light in this direction. Plan for 10:00 AM arrival at SMF to allow comfortable time before the 11:32 AM departure — return the rental car, check bags, and clear security.</p>
+          <div class="tip">Return rental car to SMF rental center · Allow extra time if checking bags</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">3</div>
+        <div class="itin-content">
+          <div class="time">11:32 AM PDT · Sacramento International (SMF)</div>
+          <h3>Delta 3755* · SAC → LAX</h3>
+          <div class="sub">Delta Main Classic (V) · Arrives Los Angeles (LAX) 1:13 PM PDT</div>
+          <p>First leg home — Sacramento to Los Angeles. A short regional hop of about 1 hour 40 minutes. The asterisk on DL3755 indicates this may be operated by a regional partner carrier under the Delta banner. Confirm the operating carrier and terminal at LAX when you check in, as LAX terminals vary by carrier.</p>
+          <div class="tip">Check operating carrier and LAX terminal before travel day — LAX is multi-terminal</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">4</div>
+        <div class="itin-content">
+          <div class="time">1:13 PM – 2:14 PM PDT · Los Angeles (LAX)</div>
+          <h3>Layover · LAX · 1 Hour 1 Minute</h3>
+          <div class="sub">Tight connection — head directly to the gate</div>
+          <p>Just over an hour at LAX. This is workable but not leisurely — head straight to the Delta gate for DL715 upon landing. If DL3755 and DL715 are in the same terminal, it's straightforward. If terminals differ, account for the inter-terminal connector or shuttle time. Confirm the gate assignment when you land.</p>
+          <div class="tip">Tight connection — skip browsing, go directly to the gate · Check gate on the Delta app after landing</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">5</div>
+        <div class="itin-content">
+          <div class="time">2:14 PM PDT · Los Angeles (LAX)</div>
+          <h3>Delta 715 · LAX → ATL</h3>
+          <div class="sub">Delta Main Classic (V) · Arrives Atlanta (ATL) 9:49 PM EDT</div>
+          <p>The long leg home — Los Angeles to Atlanta, roughly 4.5 hours in the air. Crosses back into Eastern time, landing at Hartsfield-Jackson at 9:49 PM. You'll gain three hours on the clock coming east, but it'll feel like a long day.</p>
+          <div class="tip">Land ATL 9:49 PM · Baggage claim and car are straightforward at ATL domestic</div>
+        </div>
+      </div>
+
+      <div class="itin-stop">
+        <div class="itin-marker">6</div>
+        <div class="itin-content">
+          <div class="time">~9:49 PM EDT · Hartsfield-Jackson (ATL)</div>
+          <h3>Drive: ATL → Athens, GA</h3>
+          <div class="sub">~75–90 min · US-78 E or US-316 E · Home ~11:15–11:30 PM</div>
+          <p>Last stretch. Pick up the car and head east on US-78 or US-316 to Athens — a clean, direct drive with no complications on a Saturday night. Light traffic after 10 PM. Home by 11:15–11:30 PM.</p>
+          <div class="tip">US-316 E is the faster route in light traffic · You're home before midnight</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="category-label">Return Flights · At a Glance</div>
     <div class="cards cols-2">
 
       <div class="card">
-        <div class="card-badge badge-activity">Departure</div>
-        <h3>Check Out · Downtown Napa Hotel</h3>
-        <div class="meta">Andaz / Archer / Napa River Inn · TBD</div>
-        <p>Check out of whichever hotel is booked for Friday night. All three options are in walkable downtown Napa, close to breakfast spots and an easy on-ramp to I-80.</p>
-        <div class="tip">Hotel TBD — see Fri · Napa Day tab for options</div>
+        <div class="card-badge badge-activity">Flight 1 of 2</div>
+        <h3>Delta 3755*</h3>
+        <div class="meta">SAC → LAX · Sat Jun 20 · Delta Main Classic (V)</div>
+        <p>Departs Sacramento at 11:32 AM Pacific, arrives Los Angeles at 1:13 PM Pacific. Regional flight (~1 hr 40 min). The asterisk indicates a possible partner carrier — confirm operating airline and LAX terminal when checking in the day before.</p>
+        <div class="tip">Confirm operating carrier and terminal at LAX in advance</div>
       </div>
 
       <div class="card">
-        <div class="card-badge badge-food">Breakfast</div>
-        <h3>Oxbow Public Market</h3>
-        <div class="meta">644 First St · Napa · Opens early</div>
-        <p>A natural last stop — walkable from all three hotel options, multiple breakfast vendors, easy with Andrea. A relaxed send-off before the drive north to Sacramento.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-badge badge-activity">Drive</div>
-        <h3>Napa → Sacramento (SMF)</h3>
-        <div class="meta">~1.5 hrs · I-80 East</div>
-        <p>Straightforward Saturday morning drive. Head north on Hwy 29 to I-80 East toward Sacramento. GPS will route around any traffic. Plan for ~1.5 hrs with a small buffer.</p>
-        <div class="tip">Flight details to be added once confirmed</div>
+        <div class="card-badge badge-activity">Flight 2 of 2</div>
+        <h3>Delta 715</h3>
+        <div class="meta">LAX → ATL · Sat Jun 20 · Delta Main Classic (V)</div>
+        <p>Departs Los Angeles at 2:14 PM Pacific, arrives Atlanta at 9:49 PM Eastern. Main long-haul leg home (~4 hrs 35 min). 1 hour 1 minute connection at LAX — tight but standard for same-airline connecting flights.</p>
+        <div class="tip">1:01 connection at LAX · Go direct to the gate on arrival</div>
       </div>
 
     </div>
@@ -2095,7 +2338,7 @@ PREFERENCES (carry forward)
 </style>
 
 <script>
-  const sectionIds = ['overview','st-helena','wineries','monday','wednesday','thursday','day-trips','friday','saturday'];
+  const sectionIds = ['overview','st-helena','wineries','wed-travel','monday','wednesday','thursday','day-trips','friday','saturday'];
 
   function showTab(id, label) {
     sectionIds.forEach(s => {
