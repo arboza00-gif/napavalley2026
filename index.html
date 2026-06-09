@@ -78,7 +78,10 @@ Free continental breakfast each morning — good anchor before winery days.
 
 DAY-BY-DAY PLAN
 ───────────────
-Wed Jun 10  TRAVEL DAY: Delta 904 departs ATL 9:16 AM, arrives SAC 11:07 AM.
+Wed Jun 10  TRAVEL DAY: Depart Athens ~4:30 AM. WallyPark ATL (3811 Wallypark Way, College Park)
+            Reservation #8624357 · Drop-off 6:00 AM · Pick-up Jun 20 11:30 PM · $188.00 PAID.
+            Shuttle from lot → South terminal baggage (carousels 8/9), exit door W2, follow signage.
+            Delta 904 departs ATL 9:16 AM, arrives SAC 11:07 AM.
             Hertz Nissan Rogue · Confirmation L6114749829 · SMF pickup 12pm · Drop-off Jun 20 12pm.
             Drive to Santa Rosa ~1.5 hrs. Check in. Explore town.
             Country Summer festival (Thu–Sun Jun 11–14) with Drew, Whitley, Jeff.
@@ -196,7 +199,7 @@ Overview grid: now responsive — 2 cols on phones (≤600px), 3 cols on tablets
 
 PENDING / NEXT STEPS
 ────────────────────
-· ATL airport parking → booking in progress
+· ATL airport parking → CONFIRMED · WallyPark #8624357 · $188.00 paid · Drop-off Jun 10 6:00 AM · Pick-up Jun 20 11:30 PM
 · Santa Rosa hotel → COVERED by festival (assumed AC Hotel by Marriott · confirm address)
 · Friday hotel → playing by ear · TBD closer to trip (Andaz / Archer / Napa River Inn)
 · Friday dinner → reserve ASAP (Angèle / Morimoto / Compline — fills fast in June)
@@ -225,6 +228,7 @@ PREFERENCES (carry forward)
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Napa Valley · June 2026</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <style>
     :root {
       --burgundy: #6B2737;
@@ -1348,11 +1352,19 @@ PREFERENCES (carry forward)
       <div class="itin-stop">
         <div class="itin-marker">1</div>
         <div class="itin-content">
-          <div class="time">5:30 AM · Athens, GA</div>
-          <h3>Depart Athens</h3>
-          <div class="sub">~1 hr 20 min to ATL · Airport parking TBD (booking in progress)</div>
-          <p>Early alarm. Drive from Athens to ATL — roughly 1 hour 20 minutes depending on traffic, which will be minimal at that hour. Budget time for parking and the shuttle or walk to the terminal, putting you at ATL by 7:10–7:15 AM. That gives comfortable time to check bags, clear security, and get to the gate before the 9:16 AM departure.</p>
-          <div class="tip">Set the alarm for 4:45 AM · Load the car the night before · ATL airport parking booking in progress — confirm details once booked</div>
+          <div class="time">4:30 AM · Athens, GA</div>
+          <h3>Depart Athens → WallyPark ATL</h3>
+          <div class="sub">~1 hr 20 min to WallyPark · Drop-off 6:00 AM · 3811 Wallypark Way, College Park, GA 30337</div>
+          <p>Set the alarm for 4:00 AM and load the car the night before. Drive from Athens to WallyPark (~1 hr 20 min) — arriving around 6:00 AM for the reservation start. Scan reservation QR code at entry kiosk. Shuttle loops every 30 minutes; follow signs from lot to South terminal baggage claim (carousels 8 &amp; 9), exit door W2, and follow signage for Off-Airport Parking shuttles to lower level D1. You'll be at the terminal by 6:45–7:00 AM — well ahead of the 9:16 AM departure.</p>
+          <div class="tip">WallyPark #8624357 · $188.00 paid · Scan QR at entry + exit · Shuttle → South terminal door W2 → lower level D1 · Terminal by 7:00 AM</div>
+        </div>
+      </div>
+
+      <div class="note-box" style="margin: 0 0 32px 0;">
+        <p><strong>WallyPark ATL — Confirmed.</strong> Reservation #8624357 · 3811 Wallypark Way, College Park, GA 30337 · Self Park, Uncovered · Drop-off Jun 10 @ 6:00 AM · Pick-up Jun 20 @ 11:30 PM · $188.00 paid in full (Card ending 1007). Scan QR code below at the entry kiosk on arrival and again at exit. Shuttle to South terminal runs every 30 min — exit door W2, follow signs to lower level D1.</p>
+        <div style="margin-top: 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
+          <div style="font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; color: var(--gold);">Scan at Entry &amp; Exit · Reservation #8624357</div>
+          <div id="wallypark-qr" style="background: white; padding: 12px; border-radius: 2px; display: inline-block;"></div>
         </div>
       </div>
 
@@ -2585,6 +2597,22 @@ PREFERENCES (carry forward)
   }
 
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+
+  // Generate WallyPark QR code once the library is ready
+  (function initQR() {
+    var el = document.getElementById('wallypark-qr');
+    if (!el) return;
+    try {
+      new QRCode(el, {
+        text: '8624357',
+        width: 160,
+        height: 160,
+        colorDark: '#2C2C2C',
+        colorLight: '#ffffff',
+        correctLevel: QRCode.CorrectLevel.M
+      });
+    } catch(e) { el.style.display = 'none'; }
+  })();
 </script>
 
 </body>
